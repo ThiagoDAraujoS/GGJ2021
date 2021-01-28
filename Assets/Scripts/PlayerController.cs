@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
 
@@ -35,14 +33,12 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat( "Vertical", moveVector.y );
         animator.SetFloat( "Speed", moveVector.magnitude );
         onMovePress?.Invoke();
-        Debug.Log( "Pressed " + moveVector );
     }
 
     private void OnMoveRelease( InputAction.CallbackContext ctx ) {
         moveVector = Vector2.zero;
         animator.SetFloat( "Speed", moveVector.magnitude );
         onMoveRelease?.Invoke();
-        Debug.Log( "Stopped" );
     }
 
     private void OnEnable() {
