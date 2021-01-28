@@ -53,11 +53,11 @@ public class PlayerController : MonoBehaviour
         input.Disable();
     }
 
-    private void Update() {
-        
-    }
-
     private void FixedUpdate() {
-        rb2D.MovePosition( rb2D.position + moveVector * moveSpeed * Time.fixedDeltaTime );
+        //force movement
+        rb2D.AddForce( moveVector * moveSpeed * Time.fixedDeltaTime * 5000f, ForceMode2D.Force );
+        
+        //static movement
+        //rb2D.MovePosition( rb2D.position + moveVector * moveSpeed * Time.fixedDeltaTime );
     }
 }
