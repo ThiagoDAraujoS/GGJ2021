@@ -6,10 +6,10 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public class @GGJ2021 : IInputActionCollection, IDisposable
+public class @InputMaster : IInputActionCollection, IDisposable
 {
     public InputActionAsset asset { get; }
-    public @GGJ2021()
+    public @InputMaster()
     {
         asset = InputActionAsset.FromJson(@"{
     ""name"": ""GGJ2021"",
@@ -907,8 +907,8 @@ public class @GGJ2021 : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Fire;
     public struct PlayerActions
     {
-        private @GGJ2021 m_Wrapper;
-        public PlayerActions(@GGJ2021 wrapper) { m_Wrapper = wrapper; }
+        private @InputMaster m_Wrapper;
+        public PlayerActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Look => m_Wrapper.m_Player_Look;
         public InputAction @Fire => m_Wrapper.m_Player_Fire;
@@ -963,8 +963,8 @@ public class @GGJ2021 : IInputActionCollection, IDisposable
     private readonly InputAction m_UI_TrackedDeviceOrientation;
     public struct UIActions
     {
-        private @GGJ2021 m_Wrapper;
-        public UIActions(@GGJ2021 wrapper) { m_Wrapper = wrapper; }
+        private @InputMaster m_Wrapper;
+        public UIActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
         public InputAction @Navigate => m_Wrapper.m_UI_Navigate;
         public InputAction @Submit => m_Wrapper.m_UI_Submit;
         public InputAction @Cancel => m_Wrapper.m_UI_Cancel;
