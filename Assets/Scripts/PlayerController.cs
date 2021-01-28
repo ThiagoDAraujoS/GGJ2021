@@ -1,26 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices.ComTypes;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
-    private InputMap input;
-    Vector2 move;
+    //components
+    private Rigidbody2D rb2D = null;
+    private Animator animator = null;
+    
+    //input variables
+    [SerializeField][Range(0.0f, 15.0f)]
+    private float moveSpeed;
 
-    void Awake() {
+    //hidden variables
+    private InputMap input;
+    private Vector2 moveVector;
+
+    //events
+    private UnityEvent onMovePress;
+    private UnityEvent onMoveRelease;
+
+    //messages
+    private void Awake() {
         input = new InputMap();
+        rb2D = GetComponentInChildren<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void OnMovePress( InputAction.CallbackContext ctx ) {
-        move = ctx.ReadValue<Vector2>();
-        Debug.Log( "Pressed " + move );
+        moveVector = ctx.ReadValue<Vector2>();
+        animator.SetFloat( "Horizontal", moveVector.x );
+        animator.SetFloat( "Vertical", moveVector.y );
+        animator.SetFloat( "Speed", moveVector.magnitude );
+        onMovePress?.Invoke();
     }
 
     private void OnMoveRelease( InputAction.CallbackContext ctx ) {
-        move = Vector2.zero;
-        Debug.Log( "Stopped" );
+        moveVector = Vector2.zero;
+        animator.SetFloat( "Speed", moveVector.magnitude );
+        onMoveRelease?.Invoke();
     }
 
     private void OnEnable() {
@@ -35,8 +53,11 @@ public class PlayerController : MonoBehaviour
         input.Disable();
     }
 
-    // Update is called once per frame
-    void Update() {
+    private void FixedUpdate() {
+        //force movement
+        rb2D.AddForce( moveVector * moveSpeed * Time.fixedDeltaTime * 5000f, ForceMode2D.Force );
         
+        //static movement
+        //rb2D.MovePosition( rb2D.position + moveVector * moveSpeed * Time.fixedDeltaTime );
     }
 }
