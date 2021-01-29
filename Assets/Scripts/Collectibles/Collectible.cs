@@ -6,6 +6,8 @@ public class Collectible : MonoBehaviour
 
 	[HideInInspector]
 	public int order = 0;
+	[HideInInspector]
+	public Vector2? targetPosition = null;
 
 	private CarryController _parent = null;
 
@@ -16,6 +18,18 @@ public class Collectible : MonoBehaviour
 
 	private void Start()
 	{
+	}
+
+	private void FixedUpdate()
+	{
+		if (targetPosition != null)
+		{
+			float speed = 10f;
+			float step = speed * Time.deltaTime;
+			transform.localPosition = Vector2.MoveTowards(transform.localPosition, targetPosition.Value, step);
+			if (transform.localPosition == targetPosition)
+				targetPosition = null;
+		}
 	}
 
 	private void Update()

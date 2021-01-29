@@ -61,9 +61,11 @@ public class CarryController : MonoBehaviour
 
 			item.SetParent(null);
 			item.order = 0;
-			item.transform.localPosition = this.gameObject.transform.position;
+			item.targetPosition = this.gameObject.transform.position;
 
 			_collectedItems.Remove(item);
+
+			Arrange();
 		}
 	}
 
@@ -92,9 +94,10 @@ public class CarryController : MonoBehaviour
 				(float)row * (itemSize.y / 2f)
 			);
 
-			item.transform.localPosition = offset;
+			item.targetPosition = offset;
 		}
 	}
+
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
