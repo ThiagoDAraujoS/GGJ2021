@@ -12,12 +12,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField][Range(0.0f, 15.0f)]
     private float moveSpeed;
 
+	[SerializeField]
+	private Collider2D characterCollider;
+
+	[SerializeField]
+	private CarryController carryController;
+
     //hidden variables
     private InputMap input;
     private Vector2 moveVector;
 
-    //events
-    private UnityEvent onMovePress;
+	//events
+	private UnityEvent onMovePress;
     private UnityEvent onMoveRelease;
 
     //messages
@@ -29,7 +35,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnMovePress( InputAction.CallbackContext ctx ) {
         moveVector = ctx.ReadValue<Vector2>();
-        animator.SetFloat( "Horizontal", moveVector.x );
+		carryController.UpdateForMove(moveVector);
+		animator.SetFloat( "Horizontal", moveVector.x );
         animator.SetFloat( "Vertical", moveVector.y );
         animator.SetFloat( "Speed", moveVector.magnitude );
         onMovePress?.Invoke();
@@ -41,17 +48,23 @@ public class PlayerController : MonoBehaviour
         onMoveRelease?.Invoke();
     }
 
-    private void OnEnable() {
+	private void OnFire(InputAction.CallbackContext context) {
+		carryController.HandleFirePressed();
+	}
+
+	private void OnEnable() {
         input.Player.Move.performed += OnMovePress;
         input.Player.Move.canceled += OnMoveRelease;
+		input.Player.Fire.performed += OnFire;
         input.Enable();
     }
 
     private void OnDisable() {
-        input.Player.Move.performed -= OnMovePress;
+		input.Player.Move.performed -= OnMovePress;
         input.Player.Move.canceled -= OnMoveRelease;
-        input.Disable();
-    }
+		input.Player.Fire.performed -= OnFire;
+		input.Disable();
+	}
 
     private void FixedUpdate() {
         //force movement
@@ -60,4 +73,8 @@ public class PlayerController : MonoBehaviour
         //static movement
         //rb2D.MovePosition( rb2D.position + moveVector * moveSpeed * Time.fixedDeltaTime );
     }
+
+	private void Update() {
+		transform.position = new Vector3(transform.position.x, transform.position.y, characterCollider.bounds.max.y);
+	}
 }
