@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5386641509614492100}
   - component: {fileID: 5386641509614492101}
   m_Layer: 0
-  m_Name: CollectableSprite
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 5386641510202264885}
   - component: {fileID: 440454687}
   m_Layer: 0
-  m_Name: Collectable
+  m_Name: Collectible
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider: {fileID: 5386641509614492101}
+  order: 0
 --- !u!114 &440454687
 MonoBehaviour:
   m_ObjectHideFlags: 0

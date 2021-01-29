@@ -10,7 +10,7 @@ public class BasicCharacterController : MonoBehaviour
 
 	private InputMap controls;
 	private Vector2 _movement;
-	private Collectable _touchedCollectable = null;
+	private Collectible _touchedCollectable = null;
 
 	void Awake()
 	{
@@ -70,7 +70,7 @@ public class BasicCharacterController : MonoBehaviour
 	{
 		// TODO: Maybe change this to a separate collider trigger so we can pick up nearby things, not just things we've smashed our face into?
 		// Maybe a circle collider?
-		var collectable = collision.gameObject.GetComponent<Collectable>();
+		var collectable = collision.gameObject.GetComponent<Collectible>();
 		if (collectable != null)
 			_touchedCollectable = collectable;
 	}

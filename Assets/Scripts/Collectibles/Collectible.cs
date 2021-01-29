@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Collectable : MonoBehaviour
+public class Collectible : MonoBehaviour
 {
 	public new Collider2D collider;
 

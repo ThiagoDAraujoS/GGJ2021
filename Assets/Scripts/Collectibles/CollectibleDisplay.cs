@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-public class CollectableDisplay : MonoBehaviour
+public class CollectibleDisplay : MonoBehaviour
 {
-	public CollectableDefinition collectableDefinition;
+	public CollectibleDefinition collectableDefinition;
 
 	public SpriteRenderer spriteRenderer;
 

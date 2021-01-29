@@ -13,8 +13,8 @@ public class CarryController : MonoBehaviour
 	[HideInInspector]
 	public bool isUp = false;
 
-	private List<Collectable> _collectedItems = new List<Collectable>();
-	private Collectable _touchedCollectable = null;
+	private List<Collectible> _collectedItems = new List<Collectible>();
+	private Collectible _touchedCollectable = null;
 
 	public void OnPickObj(ContextCallback ctx) {
 
@@ -38,7 +38,7 @@ public class CarryController : MonoBehaviour
 		}
 	}
 
-	public void PickUp(Collectable item)
+	public void PickUp(Collectible item)
 	{
 		item.collider.isTrigger = true;
 		item.gameObject.transform.SetParent(anchorPoint);
@@ -73,7 +73,7 @@ public class CarryController : MonoBehaviour
 	{
 		// TODO: Maybe change this to a separate collider trigger so we can pick up nearby things, not just things we've smashed our face into?
 		// Maybe a circle collider?
-		var collectable = collision.gameObject.GetComponentInParent<Collectable>();
+		var collectable = collision.gameObject.GetComponentInParent<Collectible>();
 		if (collectable != null)
 			_touchedCollectable = collectable;
 	}
