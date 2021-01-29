@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class CarryController : MonoBehaviour
 {
+	public InputMap map;
+
 	public Collider2D playerBounds;
 	public Transform anchorPoint;
 
@@ -12,6 +15,10 @@ public class CarryController : MonoBehaviour
 
 	private List<Collectable> _collectedItems = new List<Collectable>();
 	private Collectable _touchedCollectable = null;
+
+	public void OnPickObj(ContextCallback ctx) {
+
+	}
 
 	public void UpdateForMove(Vector2 moveDir)
 	{

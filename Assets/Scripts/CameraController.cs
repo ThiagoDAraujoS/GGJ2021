@@ -28,20 +28,22 @@ public class CameraController : MonoBehaviour {
     private void Awake() {
         //initialize singleton instance (i know iam able to handle this better, but for the sake of ggj i am chosing to deal with this poorly)
         _s = this;
+        transform.position = new Vector3(transform.position.x, transform.position.y, cameraStaticZ);
     }
 
     private void FixedUpdate() {
         if( player != null ) {
-            float distance = Vector3.Distance( transform.position, player.transform.position );
+
+            float distance = Vector2.Distance( transform.position, player.transform.position );
             if( distance > minTrackingDistance ) {
-                Vector3 targetVector = player.transform.position;
+                Vector2 targetVector = player.transform.position;
 
                 if( target != null )
                     targetVector = ( player.transform.position + target.transform.position ) * 0.5f;
 
                 float finalSpeed = cameraTrackingSpeed * cameraTrackingCurve.Evaluate( distance ) * Time.fixedDeltaTime;
 
-                Vector3 finalVector = Vector3.MoveTowards( transform.position, targetVector, finalSpeed );
+                Vector3 finalVector = Vector2.MoveTowards( transform.position, targetVector, finalSpeed );
                 finalVector.z = cameraStaticZ;
                 transform.position = finalVector;
             }
