@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 
@@ -40,7 +39,7 @@ public class CarryController : MonoBehaviour
 
 	public void PickUp(Collectible item)
 	{
-		item.collider.isTrigger = true;
+		item.collider.enabled = false;
 		item.gameObject.transform.SetParent(anchorPoint);
 		item.SetParent(this);
 		item.order = _collectedItems.Count + 1;
@@ -54,7 +53,7 @@ public class CarryController : MonoBehaviour
 		if (_collectedItems.Count > 0)
 		{
 			var item = _collectedItems[_collectedItems.Count - 1];
-			item.collider.isTrigger = false;
+			item.collider.enabled = true;
 			item.transform.SetParent(null);
 			item.SetParent(null);
 			item.order = 0;
