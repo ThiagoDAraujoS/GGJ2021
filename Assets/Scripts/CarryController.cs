@@ -43,6 +43,7 @@ public class CarryController : MonoBehaviour
 		item.collider.isTrigger = true;
 		item.gameObject.transform.SetParent(anchorPoint);
 		item.SetParent(this);
+		item.order = _collectedItems.Count + 1;
 		_collectedItems.Add(item);
 
 		Arrange();
@@ -56,17 +57,16 @@ public class CarryController : MonoBehaviour
 			item.collider.isTrigger = false;
 			item.transform.SetParent(null);
 			item.SetParent(null);
+			item.order = 0;
 			_collectedItems.Remove(item);
 		}
 	}
 
 	private void Arrange()
 	{
-		if (_collectedItems.Count != 0)
-		{
-			// TODO: Do some actual arranging based on the number of items.
-			_collectedItems[0].transform.localPosition = Vector2.zero; // + new Vector2(0, 0.5f) ;
-		}
+		// For now, just arrange everything on top.
+		foreach (var item in _collectedItems)
+			item.transform.localPosition = Vector2.zero;
 	}
 
 	private void OnCollisionEnter2D(Collision2D collision)
