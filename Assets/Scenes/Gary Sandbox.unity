@@ -299,7 +299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  col2d: {fileID: 548818781}
+  characterCollider: {fileID: 548818781}
+  carryController: {fileID: 667207847}
 --- !u!1 &667207845
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,8 +310,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 667207846}
+  - component: {fileID: 667207847}
   m_Layer: 0
-  m_Name: InventoryAnchor
+  m_Name: CarryAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -324,12 +326,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667207845}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.15, y: 0.95, z: -7.9648438}
+  m_LocalPosition: {x: -0.06, y: 0.95, z: -7.9648438}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 548818780}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &667207847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667207845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca73020779087724ca1d5b00424119bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerBounds: {fileID: 548818781}
 --- !u!1 &1320274226
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +376,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34aef1e92b5a1c141a6db7bc00861237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  col2d: {fileID: 1320274228}
+  collider: {fileID: 1320274228}
+  characterController: {fileID: 0}
+  parent: {fileID: 0}
 --- !u!61 &1320274228
 BoxCollider2D:
   m_ObjectHideFlags: 0

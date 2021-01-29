@@ -5,7 +5,8 @@ using UnityEngine.InputSystem;
 public class BasicCharacterController : MonoBehaviour
 {
 	public float speed = 5;
-	public Collider2D col2d;
+	public Collider2D characterCollider;
+	public CarryController carryController;
 
 	private InputMap controls;
 	private Vector2 _movement;
@@ -18,7 +19,7 @@ public class BasicCharacterController : MonoBehaviour
 
 	private void Update()
 	{
-		transform.position = new Vector3(transform.position.x, transform.position.y, col2d.bounds.max.y);
+		transform.position = new Vector3(transform.position.x, transform.position.y, characterCollider.bounds.max.y);
 	}
 
 	void FixedUpdate()
@@ -28,7 +29,7 @@ public class BasicCharacterController : MonoBehaviour
 
 	private void OnEnable()
 	{
-		controls.Player.Move.performed += OnMoveStart;
+		controls.Player.Move.performed += OnMove;
 		controls.Player.Move.canceled += OnMoveEnd;
 		controls.Player.Fire.performed += OnFire;
 		controls.Enable();
@@ -37,13 +38,14 @@ public class BasicCharacterController : MonoBehaviour
 	private void OnDisable()
 	{
 		controls.Disable();
-		controls.Player.Move.performed -= OnMoveStart;
+		controls.Player.Move.performed -= OnMove;
 		controls.Player.Move.canceled -= OnMoveEnd;
 	}
 
-	void OnMoveStart(InputAction.CallbackContext context)
+	void OnMove(InputAction.CallbackContext context)
 	{
 		_movement = context.ReadValue<Vector2>();
+		carryController.UpdateForMove(_movement);
 	}
 
 	void OnMoveEnd(InputAction.CallbackContext context)
@@ -55,10 +57,12 @@ public class BasicCharacterController : MonoBehaviour
 	{
 		if (_touchedCollectable != null)
 		{
-			_touchedCollectable.col2d.isTrigger = true;
-			_touchedCollectable.gameObject.transform.SetParent(this.gameObject.transform);
-			
-			// TODO: Need to move this transform to be relative to the hands object?
+			carryController.PickUp(_touchedCollectable);
+			_touchedCollectable = null;
+		}
+		else
+		{
+			carryController.Drop();
 		}
 	}
 
