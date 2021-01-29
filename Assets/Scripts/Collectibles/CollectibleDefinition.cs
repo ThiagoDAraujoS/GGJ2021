@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Collectable Definition", menuName = "Collectable Definition")]
+[CreateAssetMenu(fileName = "New Collectible Definition", menuName = "Collectible Definition")]
 public class CollectibleDefinition : ScriptableObject
 {
 	public string Name = "";
