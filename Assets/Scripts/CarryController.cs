@@ -15,9 +15,7 @@ public class CarryController : MonoBehaviour
 	private List<Collectible> _collectedItems = new List<Collectible>();
 	private Collectible _touchedCollectable = null;
 
-	public void OnPickObj(ContextCallback ctx) {
-
-	}
+	private int _maxItems = 9;
 
 	public void UpdateForMove(Vector2 moveDir)
 	{
@@ -39,13 +37,18 @@ public class CarryController : MonoBehaviour
 
 	public void PickUp(Collectible item)
 	{
-		item.collider.enabled = false;
-		item.gameObject.transform.SetParent(anchorPoint);
-		item.SetParent(this);
-		item.order = _collectedItems.Count + 1;
-		_collectedItems.Add(item);
+		if (_collectedItems.Count < _maxItems)
+		{
+			_collectedItems.Add(item);
 
-		Arrange();
+			item.collider.enabled = false;
+			item.transform.SetParent(anchorPoint);
+
+			item.SetParent(this);
+			item.order = _collectedItems.Count;
+
+			Arrange();
+		}
 	}
 
 	public void Drop()
@@ -55,17 +58,42 @@ public class CarryController : MonoBehaviour
 			var item = _collectedItems[_collectedItems.Count - 1];
 			item.collider.enabled = true;
 			item.transform.SetParent(null);
+
 			item.SetParent(null);
 			item.order = 0;
+			item.transform.localPosition = this.gameObject.transform.position;
+
 			_collectedItems.Remove(item);
 		}
 	}
 
 	private void Arrange()
 	{
-		// For now, just arrange everything on top.
-		foreach (var item in _collectedItems)
-			item.transform.localPosition = Vector2.zero;
+		// This is a hack... I can't figure out a better way to do it, so I went with this lol.
+
+		Vector2 itemSize = new Vector2(1f, 1f); // This should come from item.collider but it's not working righ tnow.
+
+		int maxPerRow = 2;
+		int numRows = (int)Mathf.Ceil(_collectedItems.Count / (float)maxPerRow);
+
+		// Add each item
+		for (int i = 0; i < _collectedItems.Count; i++)
+		{
+			var item = _collectedItems[i];
+
+			int row = i / maxPerRow;
+			int rowIndex = i % maxPerRow;
+
+			bool singleItemRow = (i == _collectedItems.Count - 1) && (i % maxPerRow == 0);
+			float rowWidth = (singleItemRow) ? itemSize.x : itemSize.x * 2;
+
+			Vector2 offset = new Vector2(
+				(-rowWidth / 2f) + (itemSize.x / 2) + (rowIndex * itemSize.x),
+				(float)row * (itemSize.y / 2f)
+			);
+
+			item.transform.localPosition = offset;
+		}
 	}
 
 	private void OnCollisionEnter2D(Collision2D collision)
