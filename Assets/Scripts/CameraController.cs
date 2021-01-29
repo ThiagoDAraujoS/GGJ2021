@@ -23,12 +23,11 @@ public class CameraController : MonoBehaviour {
     [SerializeField]
     private AnimationCurve cameraTrackingCurve;
 
-    private float cameraStaticZ;
+    private float cameraStaticZ = -4999;
 
     private void Awake() {
         //initialize singleton instance (i know iam able to handle this better, but for the sake of ggj i am chosing to deal with this poorly)
         _s = this;
-        cameraStaticZ = transform.position.z;
     }
 
     private void FixedUpdate() {

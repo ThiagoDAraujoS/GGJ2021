@@ -58,7 +58,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 10000
   field of view: 60
   orthographic: 1
   orthographic size: 5.625
@@ -249,6 +249,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   isActive: 1
+  target: 0
   OnBlurOn:
     m_PersistentCalls:
       m_Calls: []
