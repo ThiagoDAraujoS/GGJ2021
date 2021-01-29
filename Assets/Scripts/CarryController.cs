@@ -15,7 +15,7 @@ public class CarryController : MonoBehaviour
 	private List<Collectible> _collectedItems = new List<Collectible>();
 	private Collectible _touchedCollectable = null;
 
-	private int _maxItems = 9;
+	private int _maxItems = 5;
 
 	public void UpdateForMove(Vector2 moveDir)
 	{
@@ -27,7 +27,6 @@ public class CarryController : MonoBehaviour
 		if (_touchedCollectable != null)
 		{
 			this.PickUp(_touchedCollectable);
-			_touchedCollectable = null;
 		}
 		else
 		{
@@ -48,6 +47,8 @@ public class CarryController : MonoBehaviour
 			item.order = _collectedItems.Count;
 
 			Arrange();
+
+			_touchedCollectable = null;
 		}
 	}
 
