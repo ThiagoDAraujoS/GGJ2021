@@ -21,6 +21,7 @@ public class Blur : MonoBehaviour
     [SerializeField]
     private bool isActive = true;
 
+    [SerializeField]
     private float target = 0f;
 
     [SerializeField]
