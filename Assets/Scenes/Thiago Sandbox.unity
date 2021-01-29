@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 609002923}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03, y: 5.14, z: 0}
+  m_LocalPosition: {x: -0.03, y: 5.14, z: 10}
   m_LocalScale: {x: 22.974619, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 762638245}
@@ -410,6 +410,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ccc32268c8c99d4f843bfa60c498861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnPause:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUnpause:
+    m_PersistentCalls:
+      m_Calls: []
+  audioListener: {fileID: 0}
 --- !u!4 &1326300904
 Transform:
   m_ObjectHideFlags: 0
