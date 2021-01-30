@@ -1156,7 +1156,15 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
@@ -1169,29 +1177,29 @@ Tilemap:
   - m_RefCount: 0
     m_Data:
       e00: NaN
-      e01: 0
-      e02: 0
+      e01: 2.6299897e-20
+      e02: 2.6299897e-20
       e03: NaN
       e10: NaN
-      e11: 0
-      e12: 0
+      e11: 4.2e-43
+      e12: 4.2e-43
       e13: NaN
-      e20: 0.00039575342
-      e21: 0
-      e22: 0.000000388869
-      e23: 6.992577e-12
-      e30: 4.19e-43
-      e31: 0
-      e32: 4.19e-43
-      e33: 4.5904e-41
+      e20: 6.4485196e-13
+      e21: 0.00012477487
+      e22: 2.746079e+21
+      e23: 0.0000015469413
+      e30: 4.5904e-41
+      e31: 4.19e-43
+      e32: 4.5907e-41
+      e33: 4.19e-43
   m_TileColorArray:
   - m_RefCount: 0
-    m_Data: {r: -38.497314, g: -38.497314, b: -38.497314, a: -38.497314}
+    m_Data: {r: -91.19556, g: -91.19556, b: -91.19556, a: -91.19556}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -29, y: -4, z: 0}
-  m_Size: {x: 32, y: 46, z: 1}
+  m_Origin: {x: -30, y: -4, z: 0}
+  m_Size: {x: 33, y: 46, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -1453,6 +1461,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 7.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514032708548176482, guid: 67a7df52e012d5c41ba656cd9c7a26e8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.18
       objectReference: {fileID: 0}
     - target: {fileID: 6514032708548176483, guid: 67a7df52e012d5c41ba656cd9c7a26e8,
         type: 3}
@@ -2140,6 +2153,7 @@ GameObject:
   - component: {fileID: 1177519518}
   - component: {fileID: 1177519520}
   - component: {fileID: 1177519519}
+  - component: {fileID: 1177519521}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -2231,6 +2245,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1177519521
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177519517}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.10722782, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 1.28}
+    newSize: {x: 0.32, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.10554435, y: 1.28}
+  m_EdgeRadius: 0
 --- !u!1 &1218159514 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6514032708548176481, guid: 67a7df52e012d5c41ba656cd9c7a26e8,
@@ -2673,12 +2713,12 @@ PrefabInstance:
     - target: {fileID: 3751714851537267226, guid: 0ca91f6efc105144ea1ffa2ecc56e7f3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 52.3
       objectReference: {fileID: 0}
     - target: {fileID: 3751714851537267226, guid: 0ca91f6efc105144ea1ffa2ecc56e7f3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 14.8
       objectReference: {fileID: 0}
     - target: {fileID: 3751714851537267226, guid: 0ca91f6efc105144ea1ffa2ecc56e7f3,
         type: 3}
@@ -2923,7 +2963,7 @@ Animator:
   m_GameObject: {fileID: 1642144867}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 465bc9d703ebe73488160c12d159f047, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6862,12 +6902,12 @@ PrefabInstance:
     - target: {fileID: 4455408697374435062, guid: bf12c87d8e7a2de4a8b2de88f7f860df,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 52.3
       objectReference: {fileID: 0}
     - target: {fileID: 4455408697374435062, guid: bf12c87d8e7a2de4a8b2de88f7f860df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4455408697374435062, guid: bf12c87d8e7a2de4a8b2de88f7f860df,
         type: 3}
