@@ -23,7 +23,7 @@ public class CarryController : MonoBehaviour
 		isUp = moveDir.y > 0 && moveDir.x == 0;
 	}
 
-	public void HandleFirePressed()
+	public void HandleInteractPressed()
 	{
 		if (_touchedCollectable != null)
 		{

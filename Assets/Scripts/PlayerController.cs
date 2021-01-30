@@ -54,21 +54,21 @@ public class PlayerController : MonoBehaviour
         onMoveRelease?.Invoke();
     }
 
-	private void OnFire(InputAction.CallbackContext context) {
-		carryController.HandleFirePressed();
+	private void OnInteract(InputAction.CallbackContext context) {
+		carryController.HandleInteractPressed();
 	}
 
 	private void OnEnable() {
         input.Player.Move.performed += OnMovePress;
         input.Player.Move.canceled += OnMoveRelease;
-		input.Player.Fire.performed += OnFire;
+		input.Player.Interact.performed += OnInteract;
         input.Enable();
     }
 
     private void OnDisable() {
 		input.Player.Move.performed -= OnMovePress;
         input.Player.Move.canceled -= OnMoveRelease;
-		input.Player.Fire.performed -= OnFire;
+		input.Player.Interact.performed -= OnInteract;
 		input.Disable();
 	}
 
