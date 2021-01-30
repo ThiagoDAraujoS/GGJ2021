@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
-  m_Name: TestArmBand
+  m_Name: Moneybag
   m_EditorClassIdentifier: 
-  Name: Test Arm Band
-  Sprite: {fileID: -571593482065114561, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}
+  Name: Money Bag
+  Descriptions:
+  - 
+  - 
+  - 
+  Sprite: {fileID: -1362163451458389566, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

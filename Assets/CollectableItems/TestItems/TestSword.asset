@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
-  m_Name: TestLootBag
+  m_Name: TestSword
   m_EditorClassIdentifier: 
-  Name: Test Loot Bag
-  Sprite: {fileID: -1362163451458389566, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}
+  Name: Test Sword
+  Descriptions:
+  - A sword that has never been... tested... in battle.
+  Sprite: {fileID: -1538140115504877488, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

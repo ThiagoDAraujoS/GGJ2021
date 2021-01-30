@@ -1,14 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-using UnityEngine.Events;
 
 public enum GameState { Opening, Game, Menu }
 
+public struct DebugVariables
+{
+	// Debug Override
+	private const bool _debugEnabled = true;
+
+	// Debug Variables
+	private const bool _dropAreaEditorVisualsEnabled = true;
+
+	public bool DropAreaEditorVisualsEnabled { get { return _debugEnabled && _dropAreaEditorVisualsEnabled; } }
+}
+
 public class GameManager : MonoBehaviour
 {
+	// Debug variables.
+	public static DebugVariables DebugVariables { get; } = new DebugVariables();
+
     //scene manager
     private SceneManager sceneManager;
 

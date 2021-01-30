@@ -51,6 +51,7 @@ public class CarryController : MonoBehaviour
 			_collectedItems.Add(item);
 
 			item.collider.enabled = false;
+			item.canCollide = false;
 			item.transform.SetParent(anchorPoint);
 
 			item.SetParent(this);
@@ -64,32 +65,38 @@ public class CarryController : MonoBehaviour
 
 	public void Drop()
 	{
-		// TODO: Update this to pick the closest empty target, not the first empty target.
-		ItemDropArea dropTarget = null;
-		foreach (ItemDropArea potentialTarget in _nearbyDropAreas)
+		if (_collectedItems.Count > 0 )
 		{
-			if (potentialTarget.item == null)
+			// Find the cloest drop target to the characer. Is it inefficient? Sure! Does it work? Yes!
+			float closestDist = float.MaxValue;
+			float dist = 0f;
+			ItemDropArea dropTarget = null;
+			foreach (ItemDropArea potentialTarget in _nearbyDropAreas)
 			{
-				dropTarget = potentialTarget;
-				break;
+				if (potentialTarget.item == null && (dist = Vector2.Distance(this.transform.position, potentialTarget.transform.position)) < closestDist)
+				{
+					closestDist = dist;
+					dropTarget = potentialTarget;
+				}
 			}
-		}
 
-		if (_collectedItems.Count > 0 && dropTarget != null)
-		{
-			var item = _collectedItems[_collectedItems.Count - 1];
-			item.transform.SetParent(null);
+			// If we have a place to drop, go ahead and do it.
+			if (dropTarget != null)
+			{
+				var item = _collectedItems[_collectedItems.Count - 1];
+				item.transform.SetParent(null);
 
-			item.SetParent(null);
-			item.collider.enabled = false; // this gets set back to true when you reparent, maybe?
-			item.order = 0;
-			item.targetPosition = dropTarget.transform.position;
+				item.SetParent(null);
+				item.canCollide = true;
+				item.order = 0;
+				item.targetPosition = dropTarget.transform.position;
 
-			dropTarget.item = item;
+				dropTarget.item = item;
 
-			_collectedItems.Remove(item);
+				_collectedItems.Remove(item);
 
-			Arrange();
+				Arrange();
+			}
 		}
 	}
 
