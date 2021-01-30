@@ -38,7 +38,8 @@ public class DoorTrigger : MonoBehaviour
             {
                 OnPressurePlateDown?.Invoke();
                 SetBoolean();
-                door.SetActive(false);
+                //door.SetActive(false);
+                door.GetComponent<Collider2D>().enabled = false;
 
             }
             else
@@ -46,8 +47,10 @@ public class DoorTrigger : MonoBehaviour
             {
                 OnPressurePlateUp?.Invoke();
                 SetBoolean();
-                door.SetActive(true);
+                //door.SetActive(true);
+                door.GetComponent<Collider2D>().enabled = true;
             }
+            print("this is executed"+isOpen);
             doorAnimController.SetBool("isOpen", isOpen);
         }
     }
