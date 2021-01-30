@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
-  m_Name: TestLootBag
+  m_Name: 13_DiamonPendant
   m_EditorClassIdentifier: 
-  Name: Test Loot Bag
+  Name: Diamon Pendant
   Descriptions:
-  - A bag that may contain loot, or may not, who knows!?
-  Sprite: {fileID: -1362163451458389566, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}
+  - I've lost my most valuable pendant, please fetch it for me.
+  - I saw a beautiful gem in the dungeon but couldn't get to it, find it and bring
+    it to me.
+  - Please return my precious pendant to me.
+  Sprite: {fileID: 3088064286467380776, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

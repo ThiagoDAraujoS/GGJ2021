@@ -40,29 +40,35 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private AudioListener audioListener;
 
-    void Awake() {
+    void Awake()
+	{
         _s = this;
         input = new PlayerInput();
     }
 
-    private void OnEnable() {
+    private void OnEnable()
+	{
         
     }
 
-    private void OnDisable() {
+    private void OnDisable()
+	{
         
     }
 
-    void Update() {
+    void Update()
+	{
         
     }
 
-    public static void Pause() {
+    public static void Pause()
+	{
         _s.OnPause.Invoke();
         Time.timeScale = 0f;
     }
 
-    public static void Unpause() {
+    public static void Unpause()
+	{
         _s.OnUnpause.Invoke();
         Time.timeScale = 1f;
     }

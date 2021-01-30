@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
+  m_Name: 17_DarkKnightShield
+  m_EditorClassIdentifier: 
+  Name: Dark Knight's Shield
+  Descriptions:
+  - Uhhrg, I hate asking this... but find my shield.
+  - I lost powerfull shield that once belonged to a menacing knight. You must find
+    it for me.
+  - I lost my cool shield.. please find it at once!
+  Sprite: {fileID: -1217212208789234748, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

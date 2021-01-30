@@ -4,7 +4,6 @@ public class ItemDropArea : MonoBehaviour
 {
 	public SpriteRenderer editorDisplayRenderer;
 
-	[HideInInspector]
 	public Collectible item = null;
 
 	private void Awake()

@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
-  m_Name: TestArmBand
+  m_Name: 28_RhinoHorn
   m_EditorClassIdentifier: 
-  Name: Test Arm Band
+  Name: Rhino Horn
   Descriptions:
-  - A legendary arm band of testitude.
-  Sprite: {fileID: -571593482065114561, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}
+  - I lost a family heirloom, it's the horn of a wild beast and I simply must get
+    it back.
+  - I lost my lucky horn in the dungeon. It's from a safari I did years ago and I
+    would love to get it back.
+  Sprite: {fileID: -1069290385479395961, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

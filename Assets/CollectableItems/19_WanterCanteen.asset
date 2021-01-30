@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
-  m_Name: NiceSword
+  m_Name: 19_WanterCanteen
   m_EditorClassIdentifier: 
-  Name: Nice Sword
+  Name: Water Canteen
   Descriptions:
-  - (WIP)A nice sword
-  - (WIPSword that is nice
-  - (WIP)Sword that is not bad
-  Sprite: {fileID: -1538140115504877488, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}
+  - I lost my water canteen and I'm... so... thirstly. Find it p... please.
+  - Could you return my Water Canteen back to me? It's brand new.
+  - Aye I dropped my favorite bottle. Get it back for me would ya?
+  Sprite: {fileID: -6918871783019125565, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}
