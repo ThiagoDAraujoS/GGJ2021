@@ -419,7 +419,7 @@ PrefabInstance:
     - target: {fileID: 5386641510202264884, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
       propertyPath: m_Name
-      value: Moneybag
+      value: 01_Moneybag
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0353759b2fd07fa4087fe7f962b48207, type: 3}
@@ -493,7 +493,7 @@ PrefabInstance:
     - target: {fileID: 5386641510202264884, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
       propertyPath: m_Name
-      value: Sword
+      value: 04_NiceSword
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0353759b2fd07fa4087fe7f962b48207, type: 3}
