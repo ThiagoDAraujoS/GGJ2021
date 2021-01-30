@@ -135,7 +135,7 @@ PrefabInstance:
     - target: {fileID: 440454687, guid: 0353759b2fd07fa4087fe7f962b48207, type: 3}
       propertyPath: collectableDefinition
       value: 
-      objectReference: {fileID: 11400000, guid: e73a0bbee1b268f49a822f2ffdb084d1,
+      objectReference: {fileID: 11400000, guid: dd6dcfefbc2910a4d9e0464de5fac11c,
         type: 2}
     - target: {fileID: 5386641510202264883, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
@@ -196,11 +196,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Icon
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 5386641510202264884, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
       propertyPath: m_Name
-      value: Sword
+      value: NiceSword
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0353759b2fd07fa4087fe7f962b48207, type: 3}
@@ -324,12 +325,12 @@ PrefabInstance:
     - target: {fileID: 440454687, guid: 0353759b2fd07fa4087fe7f962b48207, type: 3}
       propertyPath: collectableDefinition
       value: 
-      objectReference: {fileID: 11400000, guid: 918934cd9a1c0b8499c5ba5fbcab049e,
+      objectReference: {fileID: 11400000, guid: 2b40c8919dfbb4f4da5f29eab0cc26d8,
         type: 2}
     - target: {fileID: 5386641510202264883, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5386641510202264883, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
@@ -385,11 +386,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Icon
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 5386641510202264884, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
       propertyPath: m_Name
-      value: ArmBand
+      value: Bracelet
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0353759b2fd07fa4087fe7f962b48207, type: 3}
@@ -597,7 +599,7 @@ PrefabInstance:
     - target: {fileID: 3265019443452448308, guid: 28af8f466b5307e4cbfc2e8ec3e0b171,
         type: 3}
       propertyPath: m_Name
-      value: Sword2Start
+      value: MagicBagStart
       objectReference: {fileID: 0}
     - target: {fileID: 3265019443452448309, guid: 28af8f466b5307e4cbfc2e8ec3e0b171,
         type: 3}
@@ -1108,7 +1110,7 @@ PrefabInstance:
     - target: {fileID: 3265019443452448308, guid: 28af8f466b5307e4cbfc2e8ec3e0b171,
         type: 3}
       propertyPath: m_Name
-      value: LootBagStart
+      value: MagicBottleStart
       objectReference: {fileID: 0}
     - target: {fileID: 3265019443452448309, guid: 28af8f466b5307e4cbfc2e8ec3e0b171,
         type: 3}
@@ -1274,12 +1276,12 @@ PrefabInstance:
     - target: {fileID: 440454687, guid: 0353759b2fd07fa4087fe7f962b48207, type: 3}
       propertyPath: collectableDefinition
       value: 
-      objectReference: {fileID: 11400000, guid: e73a0bbee1b268f49a822f2ffdb084d1,
+      objectReference: {fileID: 11400000, guid: 771faec44bdae8f4a9ff34a9357abcca,
         type: 2}
     - target: {fileID: 5386641510202264883, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5386641510202264883, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
@@ -1335,11 +1337,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Icon
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 5386641510202264884, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
       propertyPath: m_Name
-      value: Sword3
+      value: JunkPendant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0353759b2fd07fa4087fe7f962b48207, type: 3}
@@ -1469,7 +1472,7 @@ PrefabInstance:
     - target: {fileID: 3265019443452448308, guid: 28af8f466b5307e4cbfc2e8ec3e0b171,
         type: 3}
       propertyPath: m_Name
-      value: SwordStart
+      value: NiceSwordStart
       objectReference: {fileID: 0}
     - target: {fileID: 3265019443452448309, guid: 28af8f466b5307e4cbfc2e8ec3e0b171,
         type: 3}
@@ -2047,12 +2050,12 @@ PrefabInstance:
     - target: {fileID: 440454687, guid: 0353759b2fd07fa4087fe7f962b48207, type: 3}
       propertyPath: collectableDefinition
       value: 
-      objectReference: {fileID: 11400000, guid: e73a0bbee1b268f49a822f2ffdb084d1,
+      objectReference: {fileID: 11400000, guid: 72df9116a5e1d3c4f9b82790413e8e3b,
         type: 2}
     - target: {fileID: 5386641510202264883, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5386641510202264883, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
@@ -2108,11 +2111,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Icon
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 5386641510202264884, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
       propertyPath: m_Name
-      value: Sword2
+      value: MagicBag
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0353759b2fd07fa4087fe7f962b48207, type: 3}
@@ -2192,7 +2196,7 @@ PrefabInstance:
     - target: {fileID: 3265019443452448308, guid: 28af8f466b5307e4cbfc2e8ec3e0b171,
         type: 3}
       propertyPath: m_Name
-      value: ArmBand2Start
+      value: HeroShieldStart
       objectReference: {fileID: 0}
     - target: {fileID: 3265019443452448309, guid: 28af8f466b5307e4cbfc2e8ec3e0b171,
         type: 3}
@@ -2266,7 +2270,7 @@ PrefabInstance:
     - target: {fileID: 3265019443452448308, guid: 28af8f466b5307e4cbfc2e8ec3e0b171,
         type: 3}
       propertyPath: m_Name
-      value: ArmBandStart
+      value: BraceletStart
       objectReference: {fileID: 0}
     - target: {fileID: 3265019443452448309, guid: 28af8f466b5307e4cbfc2e8ec3e0b171,
         type: 3}
@@ -2449,7 +2453,7 @@ PrefabInstance:
     - target: {fileID: 440454687, guid: 0353759b2fd07fa4087fe7f962b48207, type: 3}
       propertyPath: collectableDefinition
       value: 
-      objectReference: {fileID: 11400000, guid: 918934cd9a1c0b8499c5ba5fbcab049e,
+      objectReference: {fileID: 11400000, guid: c560cb2d3ff9c014fbf1f54b6f872396,
         type: 2}
     - target: {fileID: 5386641510202264883, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
@@ -2510,11 +2514,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Icon
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 5386641510202264884, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
       propertyPath: m_Name
-      value: ArmBand2
+      value: HeroShield
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0353759b2fd07fa4087fe7f962b48207, type: 3}
@@ -2906,7 +2911,7 @@ PrefabInstance:
     - target: {fileID: 3265019443452448308, guid: 28af8f466b5307e4cbfc2e8ec3e0b171,
         type: 3}
       propertyPath: m_Name
-      value: Sword3Start
+      value: JunkPendantStart
       objectReference: {fileID: 0}
     - target: {fileID: 3265019443452448309, guid: 28af8f466b5307e4cbfc2e8ec3e0b171,
         type: 3}
@@ -2992,7 +2997,7 @@ PrefabInstance:
     - target: {fileID: 3265019443452448308, guid: 28af8f466b5307e4cbfc2e8ec3e0b171,
         type: 3}
       propertyPath: m_Name
-      value: LootBag2Start
+      value: ForestStaffStart
       objectReference: {fileID: 0}
     - target: {fileID: 3265019443452448309, guid: 28af8f466b5307e4cbfc2e8ec3e0b171,
         type: 3}
@@ -3088,7 +3093,7 @@ PrefabInstance:
     - target: {fileID: 440454687, guid: 0353759b2fd07fa4087fe7f962b48207, type: 3}
       propertyPath: collectableDefinition
       value: 
-      objectReference: {fileID: 11400000, guid: d2616eb4cb9a217478956d90847b9b9d,
+      objectReference: {fileID: 11400000, guid: 5b26d76bdbc3cfb47861cb0954d4af4c,
         type: 2}
     - target: {fileID: 5386641510202264883, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
@@ -3149,11 +3154,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Icon
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 5386641510202264884, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
       propertyPath: m_Name
-      value: LootBag2
+      value: ForestStaff
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0353759b2fd07fa4087fe7f962b48207, type: 3}
@@ -3280,7 +3286,7 @@ PrefabInstance:
     - target: {fileID: 440454687, guid: 0353759b2fd07fa4087fe7f962b48207, type: 3}
       propertyPath: collectableDefinition
       value: 
-      objectReference: {fileID: 11400000, guid: d2616eb4cb9a217478956d90847b9b9d,
+      objectReference: {fileID: 11400000, guid: bd6805551dc040044bbf296c81f2e67d,
         type: 2}
     - target: {fileID: 5386641510202264883, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
@@ -3341,11 +3347,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Icon
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 5386641510202264884, guid: 0353759b2fd07fa4087fe7f962b48207,
         type: 3}
       propertyPath: m_Name
-      value: LootBag
+      value: MagicBottle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0353759b2fd07fa4087fe7f962b48207, type: 3}
