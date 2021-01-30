@@ -1,7 +1,61 @@
 fileFormatVersion: 2
 guid: 058e04c3c07d4c04cbad488febf20378
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7987109766512241031
+    second: GameJam_TestTitleSet_0
+  - first:
+      213: -7354071833117957470
+    second: GameJam_TestTitleSet_1
+  - first:
+      213: 4154462817496786340
+    second: GameJam_TestTitleSet_2
+  - first:
+      213: 2839072842824910876
+    second: GameJam_TestTitleSet_3
+  - first:
+      213: -2551251158087239024
+    second: GameJam_TestTitleSet_4
+  - first:
+      213: 1863221217755114029
+    second: GameJam_TestTitleSet_5
+  - first:
+      213: -8873657362777745276
+    second: GameJam_TestTitleSet_6
+  - first:
+      213: 7031914139402342328
+    second: GameJam_TestTitleSet_7
+  - first:
+      213: 7734416789504132869
+    second: GameJam_TestTitleSet_8
+  - first:
+      213: -8262120549682438480
+    second: GameJam_TestTitleSet_9
+  - first:
+      213: 4073523680240542400
+    second: GameJam_TestTitleSet_10
+  - first:
+      213: -4706876219752449978
+    second: GameJam_TestTitleSet_11
+  - first:
+      213: -3895177129684882517
+    second: GameJam_TestTitleSet_12
+  - first:
+      213: -5375255829521728584
+    second: GameJam_TestTitleSet_13
+  - first:
+      213: -8832657775287633595
+    second: GameJam_TestTitleSet_14
+  - first:
+      213: -7554876399899148619
+    second: GameJam_TestTitleSet_15
+  - first:
+      213: -2314365787909319840
+    second: GameJam_TestTitleSet_16
+  - first:
+      213: 3324775572141844533
+    second: GameJam_TestTitleSet_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +85,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +94,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,7 +118,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +151,385 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 165
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9761cf02cf5182190800000000000000
+      internalID: -7987109766512241031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 165
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a26c4e91a611f990800000000000000
+      internalID: -7354071833117957470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 165
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5e675dbed97a930800000000000000
+      internalID: 4154462817496786340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 134
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18890065b9666720800000000000000
+      internalID: 2839072842824910876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_4
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 134
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09af76db692289cd0800000000000000
+      internalID: -2551251158087239024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_5
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 134
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2aa34663dd7bd910800000000000000
+      internalID: 1863221217755114029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4885a19a4af6ad480800000000000000
+      internalID: -8873657362777745276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_7
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 103
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf8f1237a0669160800000000000000
+      internalID: 7031914139402342328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_8
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 103
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5070633671b265b60800000000000000
+      internalID: 7734416789504132869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be19b8722d075d80800000000000000
+      internalID: -8262120549682438480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_10
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c221e86430188830800000000000000
+      internalID: 4073523680240542400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_11
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648fbe72401ddaeb0800000000000000
+      internalID: -4706876219752449978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 41
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab28efb90d81f9c0800000000000000
+      internalID: -3895177129684882517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_13
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 41
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb72886d414765b0800000000000000
+      internalID: -5375255829521728584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_14
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 41
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54973610d881c6580800000000000000
+      internalID: -8832657775287633595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be770611ffa72790800000000000000
+      internalID: -7554876399899148619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_16
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 10
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0631953f398b1efd0800000000000000
+      internalID: -2314365787909319840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_TestTitleSet_17
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 10
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538296774c9f32e20800000000000000
+      internalID: 3324775572141844533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
