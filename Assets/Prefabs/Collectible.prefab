@@ -155,6 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collider: {fileID: 5386641509614492101}
   order: 0
+  canCollide: 1
 --- !u!114 &440454687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,4 +169,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectableDefinition: {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 5386641509614492100}
