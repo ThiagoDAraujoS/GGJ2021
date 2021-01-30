@@ -17,13 +17,18 @@ public class DoorTrigger : MonoBehaviour
 
 
     private bool isOpen = false;
+    private bool isUp = true;
 
     [SerializeField]
     private Animator doorAnimController;
 
+    [SerializeField]
+    private Animator plateAnimController;
+
     void SetBoolean()
     {
         isOpen = !isOpen;
+        isUp = !isUp;
 
     }
 
@@ -52,6 +57,7 @@ public class DoorTrigger : MonoBehaviour
             }
             print("this is executed"+isOpen);
             doorAnimController.SetBool("isOpen", isOpen);
+            plateAnimController.SetBool("isUp", isUp);
         }
     }
 }
