@@ -23,8 +23,8 @@ public class PlayerController : MonoBehaviour
     private Vector2 moveVector;
 
 	//events
-	private UnityEvent onMovePress;
-    private UnityEvent onMoveRelease;
+	public UnityEvent onMovePress;
+    public UnityEvent onMoveRelease;
 
     //messages
     private void Awake() {
@@ -34,15 +34,21 @@ public class PlayerController : MonoBehaviour
     }
 
     private void OnMovePress( InputAction.CallbackContext ctx ) {
-        moveVector = ctx.ReadValue<Vector2>();
-		carryController.UpdateForMove(moveVector);
-		animator.SetFloat( "Horizontal", moveVector.x );
-        animator.SetFloat( "Vertical", moveVector.y );
-        animator.SetFloat( "Speed", moveVector.magnitude );
+        Vector2 vex = ctx.ReadValue<Vector2>();
+		carryController.UpdateForMove(vex);
+		animator.SetFloat( "Horizontal", vex.x );
+        animator.SetFloat( "Vertical", vex.y );
+        animator.SetFloat( "Speed", vex.magnitude );
+        if (moveVector.magnitude == 0 && vex.magnitude != 0)
+        {
         onMovePress?.Invoke();
+        }
+        moveVector = ctx.ReadValue<Vector2>();
+
     }
 
     private void OnMoveRelease( InputAction.CallbackContext ctx ) {
+
         moveVector = Vector2.zero;
         animator.SetFloat( "Speed", moveVector.magnitude );
         onMoveRelease?.Invoke();
