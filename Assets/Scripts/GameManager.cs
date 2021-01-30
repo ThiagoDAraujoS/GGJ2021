@@ -11,9 +11,11 @@ public struct DebugVariables
 	private const bool _debugEnabled = true;
 
 	// Debug Variables
-	private const bool _dropAreaEditorVisualsEnabled = true;
+	private const bool _dropAreaRuntimeVisualsEnabled = true;
+	private const bool _exitAreaRuntimeVisualsEnabled = true;
 
-	public bool DropAreaEditorVisualsEnabled { get { return _debugEnabled && _dropAreaEditorVisualsEnabled; } }
+	public bool DropAreaRuntimeVisualsEnabled { get { return _debugEnabled && _dropAreaRuntimeVisualsEnabled; } }
+	public bool ExitAreaRuntimeVisualsEnabled { get { return _debugEnabled && _exitAreaRuntimeVisualsEnabled; } }
 }
 
 public class GameManager : MonoBehaviour

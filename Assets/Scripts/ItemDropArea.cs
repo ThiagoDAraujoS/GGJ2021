@@ -8,7 +8,7 @@ public class ItemDropArea : MonoBehaviour
 
 	private void Awake()
 	{
-		if (editorDisplayRenderer != null && !GameManager.DebugVariables.DropAreaEditorVisualsEnabled)
+		if (editorDisplayRenderer != null && !GameManager.DebugVariables.DropAreaRuntimeVisualsEnabled)
 			editorDisplayRenderer.enabled = false;
 	}
 }

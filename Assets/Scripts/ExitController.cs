@@ -5,6 +5,13 @@ using UnityEngine;
 public class ExitController : MonoBehaviour
 {
 	public List<ItemDropArea> LinkedDropAreas;
+	public SpriteRenderer editorDisplayRenderer;
+
+	private void Awake()
+	{
+		if (editorDisplayRenderer != null && !GameManager.DebugVariables.ExitAreaRuntimeVisualsEnabled)
+			editorDisplayRenderer.enabled = false;
+	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
