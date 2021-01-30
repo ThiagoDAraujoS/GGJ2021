@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
+  m_Name: 32_RoyalTome
+  m_EditorClassIdentifier: 
+  Name: Royal Tome
+  Descriptions:
+  - I lost a book containing the genealogy of the notorious King Red. Please you
+    must find it, it is of historical signigicance.
+  - Please, retrieve my book. It once bellonged to an anciant Royal family.
+  - I'm red with anger about losing my sacred tome. Please you must find it!
+  Sprite: {fileID: 1652436612213808648, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

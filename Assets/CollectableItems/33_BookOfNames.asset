@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
+  m_Name: 33_BookOfNames
+  m_EditorClassIdentifier: 
+  Name: Book of Names
+  Descriptions:
+  - I've lost a legendary tome that contains the name of everyone in the world. It's
+    unique in the world, you must retrieve it!
+  - Please you must find my book. It is a mystical tome of names.
+  - Please return my book to me. It is a relic of an anciant civilisation that predates
+    our own. It was used in conjunction with an item called a... fhone?
+  Sprite: {fileID: 8990187706960978137, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
+  m_Name: 38_DemonChest
+  m_EditorClassIdentifier: 
+  Name: 
+  Descriptions:
+  - Please bring me back the demon's loot. He hides in in a chest and I must have
+    it.
+  - I found a special treasure chest earlier but I was slain before I could grab
+    it. Please get it for me!
+  - Please get me some treasure, the best you can find. I won't settle for anything
+    but.
+  Sprite: {fileID: -8441678175055159181, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
+  m_Name: 36_BrokenMirror
+  m_EditorClassIdentifier: 
+  Name: 
+  Descriptions:
+  - Please find my magic mirror. I fear I will face 7 years bad luck if you dont
+    find it soon.
+  - I dropped my mirror, please be a dear and fetch it back for me will you?
+  - Please find my Mirror. Before being carried out the dungeon I saw a beast step
+    on it and I fear the worse.
+  Sprite: {fileID: 8162691221070881113, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}
