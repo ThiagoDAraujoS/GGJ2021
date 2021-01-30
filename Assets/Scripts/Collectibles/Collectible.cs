@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
@@ -28,7 +28,11 @@ public class Collectible : MonoBehaviour
 			float step = speed * Time.deltaTime;
 			transform.localPosition = Vector2.MoveTowards(transform.localPosition, targetPosition.Value, step);
 			if (transform.localPosition == targetPosition)
+			{
 				targetPosition = null;
+				if (this.collider.enabled == false)
+					this.collider.enabled = true;
+			}
 		}
 	}
 

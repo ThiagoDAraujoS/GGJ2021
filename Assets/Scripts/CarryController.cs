@@ -14,8 +14,9 @@ public class CarryController : MonoBehaviour
 
 	private List<Collectible> _collectedItems = new List<Collectible>();
 	private Collectible _touchedCollectable = null;
+	private List<ItemDropArea> _nearbyDropAreas = new List<ItemDropArea>();
 
-	private int _maxItems = 5;
+	private int _maxItems = 3;
 
 	public void UpdateForMove(Vector2 moveDir)
 	{
@@ -28,7 +29,7 @@ public class CarryController : MonoBehaviour
 		{
 			this.PickUp(_touchedCollectable);
 		}
-		else
+		else if (_nearbyDropAreas.Count > 0)
 		{
 			this.Drop();
 		}
@@ -38,6 +39,15 @@ public class CarryController : MonoBehaviour
 	{
 		if (_collectedItems.Count < _maxItems)
 		{
+			foreach (var dropTarget in _nearbyDropAreas)
+			{
+				if (dropTarget.item == item)
+				{
+					dropTarget.item = null;
+					break;
+				}
+			}
+
 			_collectedItems.Add(item);
 
 			item.collider.enabled = false;
@@ -54,15 +64,28 @@ public class CarryController : MonoBehaviour
 
 	public void Drop()
 	{
-		if (_collectedItems.Count > 0)
+		// TODO: Update this to pick the closest empty target, not the first empty target.
+		ItemDropArea dropTarget = null;
+		foreach (ItemDropArea potentialTarget in _nearbyDropAreas)
+		{
+			if (potentialTarget.item == null)
+			{
+				dropTarget = potentialTarget;
+				break;
+			}
+		}
+
+		if (_collectedItems.Count > 0 && dropTarget != null)
 		{
 			var item = _collectedItems[_collectedItems.Count - 1];
-			item.collider.enabled = true;
 			item.transform.SetParent(null);
 
 			item.SetParent(null);
+			item.collider.enabled = false; // this gets set back to true when you reparent, maybe?
 			item.order = 0;
-			item.targetPosition = this.gameObject.transform.position;
+			item.targetPosition = dropTarget.transform.position;
+
+			dropTarget.item = item;
 
 			_collectedItems.Remove(item);
 
@@ -99,6 +122,19 @@ public class CarryController : MonoBehaviour
 		}
 	}
 
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		var dropArea = collision.gameObject.GetComponentInParent<ItemDropArea>();
+		if (dropArea != null && !_nearbyDropAreas.Contains(dropArea))
+			_nearbyDropAreas.Add(dropArea);
+	}
+
+	private void OnTriggerExit2D(Collider2D collision)
+	{
+		var dropArea = collision.gameObject.GetComponentInParent<ItemDropArea>();
+		if (dropArea != null && _nearbyDropAreas.Contains(dropArea))
+			_nearbyDropAreas.Remove(dropArea);
+	}
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
