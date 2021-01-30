@@ -8,6 +8,8 @@ public class Collectible : MonoBehaviour
 	public int order = 0;
 	[HideInInspector]
 	public Vector2? targetPosition = null;
+	[HideInInspector]
+	public bool canCollide = true;
 
 	private CarryController _parent = null;
 
@@ -30,7 +32,7 @@ public class Collectible : MonoBehaviour
 			if (transform.localPosition == targetPosition)
 			{
 				targetPosition = null;
-				if (this.collider.enabled == false)
+				if (this.collider.enabled == false && this.canCollide == true)
 					this.collider.enabled = true;
 			}
 		}
