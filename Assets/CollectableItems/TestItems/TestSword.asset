@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: TestSword
   m_EditorClassIdentifier: 
   Name: Test Sword
+  Descriptions:
+  - A sword that has never been... tested... in battle.
   Sprite: {fileID: -1538140115504877488, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

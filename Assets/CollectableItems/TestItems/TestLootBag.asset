@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: TestLootBag
   m_EditorClassIdentifier: 
   Name: Test Loot Bag
+  Descriptions:
+  - A bag that may contain loot, or may not, who knows!?
   Sprite: {fileID: -1362163451458389566, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}
