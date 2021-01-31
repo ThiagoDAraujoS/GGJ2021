@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
-  m_Name: 34_MagicMirros
+  m_Name: 34_MagicMirror
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Magic Mirror
   Descriptions:
   - My mirror, these beasts took my magic mirror. I implore you find it for me.
   - Please return my magic mirror to me, looking at myself in a regular mirror just

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
   m_Name: 09_OldBracelet
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Old Bracelet
   Descriptions:
   - I found an old bracelet but dropped it when I escaped the dungeon, please find
     it for me.

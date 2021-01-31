@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
-  m_Name: 19_WanterCanteen
+  m_Name: 19_WaterCanteen
   m_EditorClassIdentifier: 
   Name: Water Canteen
   Descriptions:

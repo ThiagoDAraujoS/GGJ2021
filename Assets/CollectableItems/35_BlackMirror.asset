@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
   m_Name: 35_BlackMirror
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Black Mirror
   Descriptions:
   - Please find my mirror of darkness, I can't bear to be appart from it.
   - 'I''ve lost an anciant mirror from a civilisation long lost. Please bring it

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
   m_Name: 03_EmptyBag
   m_EditorClassIdentifier: 
-  Name: Empty Coin bag
+  Name: Empty Coin Bag
   Descriptions:
   - Please retrieve my old coin purse.
   - I lost all my gold in the dungeon but I'd like to at least get my con bag back.

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
   m_Name: 36_BrokenMirror
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Broken Mirror
   Descriptions:
   - Please find my magic mirror. I fear I will face 7 years bad luck if you dont
     find it soon.

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
-  m_Name: 08_StrenghtBangle
+  m_Name: 08_StrengthBangle
   m_EditorClassIdentifier: 
-  Name: Strenght Bangle
+  Name: Strength Bangle
   Descriptions:
   - Please find my precious lost bangle.
   - I lost a powerfull bangle and I need it back!

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a69dc0fe4773a4cae887d0b4c233af, type: 3}
   m_Name: 38_DemonChest
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Demon Chest
   Descriptions:
   - Please bring me back the demon's loot. He hides in in a chest and I must have
     it.
