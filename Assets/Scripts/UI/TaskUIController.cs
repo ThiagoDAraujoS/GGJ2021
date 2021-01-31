@@ -72,7 +72,6 @@ public class TaskUIController : MonoBehaviour
 	{
 		foreach (var component in this.UICanvas.GetComponentsInChildren<Text>())
 		{
-			//component.enabled = false;
 			component.CrossFadeAlpha(0f, fadeTime, false);
 		}
 

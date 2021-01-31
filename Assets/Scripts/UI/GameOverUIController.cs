@@ -8,12 +8,16 @@ public class GameOverUIController : MonoBehaviour
 	private class Constants
 	{
 		public const float FadeTime = 0.25f;
+		public const float FadeDelay = 1f;
 	}
 
 	public Canvas UICanvas;
 	public ObjectiveController ObjectiveController;
 	public List<Image> RequiredItemImages;
 	public List<Image> CollectedItemImages;
+	public Image BackgroundImage;
+	public Text ItemsNeededText;
+	public Text ItemsCollectedText;
 
 	private void Start()
 	{
@@ -42,6 +46,7 @@ public class GameOverUIController : MonoBehaviour
 			{
 				this.RequiredItemImages[i].sprite = objectives[i].Sprite;
 				this.RequiredItemImages[i].enabled = true;
+				this.RequiredItemImages[i].CrossFadeAlpha(0f, 0f, false);
 			}
 		}
 
@@ -54,6 +59,7 @@ public class GameOverUIController : MonoBehaviour
 			{
 				this.CollectedItemImages[i].sprite = collectedItems[i].Sprite;
 				this.CollectedItemImages[i].enabled = true;
+				this.CollectedItemImages[i].CrossFadeAlpha(0f, 0f, false);
 			}
 		}
 	}
@@ -74,24 +80,35 @@ public class GameOverUIController : MonoBehaviour
 	{
 		this.UICanvas.enabled = true;
 
-		foreach (var component in this.UICanvas.GetComponentsInChildren<Image>())
+		// Fade in BG.
+		this.BackgroundImage.CrossFadeAlpha(1f, fadeTime, false);
+		yield return new WaitForSeconds(Constants.FadeTime);
+
+		// Fade in items needed text and images.
+		this.ItemsNeededText.CrossFadeAlpha(1f, fadeTime, false);
+		yield return new WaitForSeconds(Constants.FadeDelay);
+
+		foreach (var requiredItemImages in this.RequiredItemImages)
 		{
-			component.CrossFadeAlpha(1f, fadeTime, false);
+			requiredItemImages.CrossFadeAlpha(1f, fadeTime, false);
+			yield return new WaitForSeconds(Constants.FadeDelay / this.RequiredItemImages.Count);
 		}
 
-		foreach (var component in this.UICanvas.GetComponentsInChildren<Text>())
-		{
-			component.CrossFadeAlpha(1f, fadeTime, false);
-		}
+		// Fade in items collected text and images.
+		this.ItemsCollectedText.CrossFadeAlpha(1f, fadeTime, false);
+		yield return new WaitForSeconds(Constants.FadeDelay);
 
-		yield return new WaitForSeconds(fadeTime);
+		foreach (var collectedItemImages in this.CollectedItemImages)
+		{
+			collectedItemImages.CrossFadeAlpha(1f, fadeTime, false);
+			yield return new WaitForSeconds(Constants.FadeDelay / this.CollectedItemImages.Count);
+		}
 	}
 
 	private IEnumerator HandleFadeOut(float fadeTime)
 	{
 		foreach (var component in this.UICanvas.GetComponentsInChildren<Text>())
 		{
-			//component.enabled = false;
 			component.CrossFadeAlpha(0f, fadeTime, false);
 		}
 

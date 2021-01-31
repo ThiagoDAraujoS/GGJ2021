@@ -1285,6 +1285,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &767951570 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6243511300340501896, guid: ae911523caca91a46a8344a8f8481fbd,
+    type: 3}
+  m_PrefabInstance: {fileID: 6243511299840986970}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &783271484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1387,6 +1399,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 284775712}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &842278385 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6243511300075088555, guid: ae911523caca91a46a8344a8f8481fbd,
+    type: 3}
+  m_PrefabInstance: {fileID: 6243511299840986970}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &855827461 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3265019443452448309, guid: 28af8f466b5307e4cbfc2e8ec3e0b171,
@@ -1950,6 +1974,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1040683002 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6243511300009181344, guid: ae911523caca91a46a8344a8f8481fbd,
+    type: 3}
+  m_PrefabInstance: {fileID: 6243511299840986970}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1098548320 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5386641510202264885, guid: 0353759b2fd07fa4087fe7f962b48207,
@@ -4218,6 +4254,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6243511300182324495, guid: ae911523caca91a46a8344a8f8481fbd,
+        type: 3}
+      propertyPath: BackgroundImage
+      value: 
+      objectReference: {fileID: 842278385}
+    - target: {fileID: 6243511300182324495, guid: ae911523caca91a46a8344a8f8481fbd,
+        type: 3}
+      propertyPath: ItemsNeededText
+      value: 
+      objectReference: {fileID: 1040683002}
+    - target: {fileID: 6243511300182324495, guid: ae911523caca91a46a8344a8f8481fbd,
+        type: 3}
+      propertyPath: ItemsCollectedText
+      value: 
+      objectReference: {fileID: 767951570}
     - target: {fileID: 6243511300182324495, guid: ae911523caca91a46a8344a8f8481fbd,
         type: 3}
       propertyPath: ObjectiveController

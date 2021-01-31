@@ -657,6 +657,9 @@ MonoBehaviour:
   - {fileID: 6243511300868046540}
   - {fileID: 6243511299847575658}
   - {fileID: 6243511299938721876}
+  BackgroundImage: {fileID: 6243511300075088555}
+  ItemsNeededText: {fileID: 6243511300009181344}
+  ItemsCollectedText: {fileID: 6243511300340501896}
 --- !u!1 &6243511300340501898
 GameObject:
   m_ObjectHideFlags: 0
