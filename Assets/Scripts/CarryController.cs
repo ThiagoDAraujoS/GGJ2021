@@ -58,7 +58,7 @@ public class CarryController : MonoBehaviour
 			item.order = _collectedItems.Count;
 
 			Arrange();
-
+            // TODO: Add audio here
 			_touchedCollectable = null;
 		}
 	}
@@ -96,6 +96,7 @@ public class CarryController : MonoBehaviour
 				_collectedItems.Remove(item);
 
 				Arrange();
+                // TODO: Add audio here
 			}
 		}
 	}
