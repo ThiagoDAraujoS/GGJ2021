@@ -15,8 +15,7 @@ MonoBehaviour:
   Name: Magic Mirror
   Descriptions:
   - My mirror, these beasts took my magic mirror. I implore you find it for me.
-  - Please return my magic mirror to me, looking at myself in a regular mirror just
-    won't do.
-  - Please find my mirror, I couldn't bear to see these beasts put their hands on
+  - Please find my magic mirror, looking at myself in a regular mirror won't do!
+  - Please find my mirror, I couldn't bear to see those beasts put their hands on
     it.
   Sprite: {fileID: -2007367053389815948, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

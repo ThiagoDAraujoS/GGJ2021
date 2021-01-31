@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Demon Horn
   Descriptions:
-  - I lost a magical horn, it's powers must not get in the wrong hands. Return it
-    to me.
+  - I lost a demonic horn, it's powers must not get in the wrong hands.
   - Return the beast's horn to me at once. I need it for my dark ritual.
   Sprite: {fileID: -7798977521053748199, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

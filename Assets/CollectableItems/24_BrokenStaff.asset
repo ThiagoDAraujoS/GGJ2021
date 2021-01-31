@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Broken Staff
   Descriptions:
-  - I think I dropped my staff when I was running out of there...  please get it
-    back to me.
-  - My poor magic staff...  just get it back for me will you?
-  - Despite it's condition I would very much like to get my magic staff back. Please,
-    fetch it for me.
+  - I think I broke my staff when I dropped it. I can fix it, but I need it back.
+  - My staff has seen better days... could you get it back for me?
+  - Despite its condition I would very much like to get my magic staff back.
   Sprite: {fileID: -2995999905344524710, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

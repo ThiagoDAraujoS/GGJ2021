@@ -15,8 +15,6 @@ MonoBehaviour:
   Name: Rusty Key
   Descriptions:
   - Lost an old key in there, don't ask questions just get it back.
-  - I saw an old key while I was in there and I'd like you to get it. All I can remember
-    is that it's not silver.
-  - I lost a key, I don't think it unlocks anything but It has sentimental value
-    so please return it to me.
+  - I saw an old key while I was in there. All I can remember is that it's not silver.
+  - I lost a key. It has sentimental value so please return it to me.
   Sprite: {fileID: 3409432612784857312, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

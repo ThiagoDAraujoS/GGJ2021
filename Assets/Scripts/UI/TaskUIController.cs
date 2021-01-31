@@ -31,6 +31,7 @@ public class TaskUIController : MonoBehaviour
 			newText.rectTransform.anchoredPosition -= new Vector2(0, i * (height + padding));
 
 			newText.text = objective.Description;
+
 			newText.enabled = true;
 		}
 

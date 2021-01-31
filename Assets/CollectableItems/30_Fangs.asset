@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Fangs
   Descriptions:
-  - I've lost some verry nice beast fangs in the dungeon. Please return them to me.
-  - If I don't get these fangs back how will people believe I slayed such a monstruous
-    beast. Please get them back for me.
-  - I slayed the beast but got defeated before I could collect its fangs. Bring them
-    to me please.
+  - I've lost some very nice beast fangs. Can you find them for me?
+  - I need those fangs back to prove I slayed the monstrous beast!
+  - I slayed the beast but got defeated before I could collect its fangs. Grab them?
   Sprite: {fileID: -8536138304680465144, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

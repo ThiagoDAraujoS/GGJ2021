@@ -14,8 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Lost Treasure
   Descriptions:
-  - I dropped a chest on my way out. I saw some theives enter the dungeon and I fear
-    the worse.
-  - Please get back my treasure chest, It's mine I found it first. These other adventurers
-    better not have touched it.
+  - I lost some treasure... the chest might be hard to see in the dark.
+  - Please grab my treasure. The metal reflects faintly of blue.
   Sprite: {fileID: -1033315647814010997, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

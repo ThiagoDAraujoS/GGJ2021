@@ -14,10 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Magic Snowball
   Descriptions:
-  - This may seem strange but... I lost a snowball... don't ask questions just get
-    it!
-  - I lost my dear Dinky when escaping the dungeon..  you'il recognize him when you
-    see him. He's a jolly fella even if he gives you the cold shoulder.
-  - My round friend is lost in the dungeon. Thinking about him lost in there gives
-    me shivers.
+  - This may seem strange but... I lost a snowball... don't ask questions.
+  - I lost my dear Dinky when escaping...  he can be a little cold.
+  - My round friend is lost! Thinking about him lost in there gives me shivers.
   Sprite: {fileID: 8020084882645379448, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

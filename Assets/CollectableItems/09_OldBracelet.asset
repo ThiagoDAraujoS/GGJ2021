@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Old Bracelet
   Descriptions:
-  - I found an old bracelet but dropped it when I escaped the dungeon, please find
-    it for me.
+  - I found an old bracelet but dropped it on my way out, please find it for me.
   - 'Could you retrieve my old bracelet? '
-  - I hope my bracelet is okay, I dropped it pretty hard in the dungeon. Could you
-    find it for me?
+  - I lost an old bracelet somehwere, see if you can find it!
   Sprite: {fileID: 3904670310592902744, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

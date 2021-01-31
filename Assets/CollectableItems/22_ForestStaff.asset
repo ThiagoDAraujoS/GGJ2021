@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Forest Staff
   Descriptions:
-  - I lost my magic staff in the dungeon. It's filled with the energy of the forest,
-    please get it back for me.
+  - I lost my magic staff, filled with the energy of the forest, please get it back!
   - Please get my wooden magic staff back to me.
-  - 'Please, could you go look for my magic staff? '
+  - Please, could you go look for my magic staff? It was the last tree of its kind!
   Sprite: {fileID: 6922734744539685861, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

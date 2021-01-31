@@ -385,8 +385,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8475888154840420109, guid: b0acf758dcb7de042be7cf1a980f9f66,
         type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 8475888154840420109, guid: b0acf758dcb7de042be7cf1a980f9f66,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 6db2a2391c2ffb34395ea32ecd8eb0c6,
+        type: 3}
+    - target: {fileID: 8475888154840420109, guid: b0acf758dcb7de042be7cf1a980f9f66,
+        type: 3}
       propertyPath: m_FontData.m_BestFit
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8475888154840420109, guid: b0acf758dcb7de042be7cf1a980f9f66,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8475888154840420109, guid: b0acf758dcb7de042be7cf1a980f9f66,
         type: 3}

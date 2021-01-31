@@ -15,7 +15,6 @@ MonoBehaviour:
   Name: Dark Knight's Shield
   Descriptions:
   - Uhhrg, I hate asking this... but find my shield.
-  - I lost powerfull shield that once belonged to a menacing knight. You must find
-    it for me.
+  - I lost powerfull shield that once belonged to a menacing knight.
   - I lost my cool shield.. please find it at once!
   Sprite: {fileID: -1217212208789234748, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

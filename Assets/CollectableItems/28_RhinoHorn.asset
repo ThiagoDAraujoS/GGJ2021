@@ -14,8 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Rhino Horn
   Descriptions:
-  - I lost a family heirloom, it's the horn of a wild beast and I simply must get
-    it back.
-  - I lost my lucky horn in the dungeon. It's from a safari I did years ago and I
-    would love to get it back.
+  - I lost an heirloom, it's the horn of a wild beast and I simply must get it back.
+  - I lost my lucky horn in the dungeon. It's from a safari I did years ago.
   Sprite: {fileID: -1069290385479395961, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Silver Key
   Descriptions:
-  - I lost a single ridged key. Return it to me would you?
-  - I lost my house key in the dungeon! Please find it so I can go home.
-  - This darn key must be in the dungeon somewhere, it doesn't look like much but
-    I need it back.
+  - I lost a single ridged, metal key. Return it to me would you?
+  - I lost my simple house key in the dungeon! Please find it so I can go home.
+  - My key must be in the dungeon, it doesn't look like much but I need it back.
   Sprite: {fileID: -4012920335578092527, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

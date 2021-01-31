@@ -15,7 +15,6 @@ MonoBehaviour:
   Name: Gold Bracelet
   Descriptions:
   - 'Please find my nice bracelet. '
-  - I found a beautiful bracelet but dropped it when I was defeated. Please get it
-    back for me.
+  - I found a beautiful bracelet but I was defeated. Please get it back for me.
   - I lost a valuable bracelet in the dungeon, please retrieve it!
   Sprite: {fileID: -571593482065114561, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

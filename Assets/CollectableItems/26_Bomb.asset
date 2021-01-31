@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Bomb
   Descriptions:
-  - There's no time to lose, get that ting out of there before it blows up the dungeon.
-  - I've lost a.. whacha call it, it's an exploding orb thing... ahh the name's on
-    the tip of my tongue. You'il know what it is.
-  - I've been sold a dud. I was going to blow up these monsters and it didin't detonate!
-    I need it back so I can get a refund.
+  - There's no time to lose, get that thing out of there before it blows!
+  - I've lost a.. whacha call it, it's an exploding orb thing. Ah you'll figure it
+    out.
+  - I've been sold a dud. I was going to blow up these monsters but it fizzled out.
   Sprite: {fileID: 8129892460137295806, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

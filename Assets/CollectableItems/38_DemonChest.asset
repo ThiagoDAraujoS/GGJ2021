@@ -14,10 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Demon Chest
   Descriptions:
-  - Please bring me back the demon's loot. He hides in in a chest and I must have
-    it.
-  - I found a special treasure chest earlier but I was slain before I could grab
-    it. Please get it for me!
-  - Please get me some treasure, the best you can find. I won't settle for anything
-    but.
+  - Please bring me back the demon's loot. He hides in in a chest.
+  - I found a red treasure chest earlier but I was slain before I could grab it.
+  - Please get me some treasure, the brightest you can find!
   Sprite: {fileID: -8441678175055159181, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

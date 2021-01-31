@@ -15,6 +15,6 @@ MonoBehaviour:
   Name: Water Canteen
   Descriptions:
   - I lost my water canteen and I'm... so... thirstly. Find it p... please.
-  - Could you return my Water Canteen back to me? It's brand new.
+  - Could you return my water canteen back to me? It's brand new.
   - Aye I dropped my favorite bottle. Get it back for me would ya?
   Sprite: {fileID: -6918871783019125565, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

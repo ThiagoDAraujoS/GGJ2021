@@ -15,8 +15,6 @@ MonoBehaviour:
   Name: Dark Staff
   Descriptions:
   - I lost a very powerfull magic staff in this dungeon, return it to me.
-  - If you know what's good for you you'il fetch my magic staff from this dungeon
-    at once.
-  - I lost my magic staff in the dungeon. It used to belong to a powerfull wizard,
-    it's important I get it back.
+  - If you know what's good for you you'll fetch my magic staff from at once.
+  - I lost my staff. It used to belong to a dark wizard. I must have it back!
   Sprite: {fileID: -3140681831231312173, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Old Flask
   Descriptions:
-  - Please return my water canteen to me. It's a family heirloom passed down several
-    generations.
-  - '*Hic* My flask...  go get it fer me!I *Hic* hope I didin''t spill all my whiskey.'
+  - My lost canteen is a family heirloom passed down several generations.
+  - '*Hic* My flask...  go get it fer me!I *Hic* hope I didn''t spill all my whiskey.'
   - I lost an old bottle in there, could you get it back please?
   Sprite: {fileID: -8210068500276605561, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

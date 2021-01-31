@@ -1391,12 +1391,12 @@ PrefabInstance:
     - target: {fileID: 3751714851537267224, guid: 0ca91f6efc105144ea1ffa2ecc56e7f3,
         type: 3}
       propertyPath: m_UpscaleRT
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3751714851537267224, guid: 0ca91f6efc105144ea1ffa2ecc56e7f3,
         type: 3}
       propertyPath: m_PixelSnapping
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3751714851537267225, guid: 0ca91f6efc105144ea1ffa2ecc56e7f3,
         type: 3}
@@ -3469,6 +3469,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4424686960470439239, guid: ba3039a9fb27fd7458ed7793e1ece2cd,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5244373623467114224, guid: ba3039a9fb27fd7458ed7793e1ece2cd,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 51.18312
+      objectReference: {fileID: 0}
+    - target: {fileID: 5244373623467114224, guid: ba3039a9fb27fd7458ed7793e1ece2cd,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 106.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 5244373623467114225, guid: ba3039a9fb27fd7458ed7793e1ece2cd,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Line 1
+
+        Line 2
+
+        Line 3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5244373623467114225, guid: ba3039a9fb27fd7458ed7793e1ece2cd,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba3039a9fb27fd7458ed7793e1ece2cd, type: 3}
 --- !u!1001 &5386641509284774918
@@ -3570,25 +3599,67 @@ PrefabInstance:
     - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
         type: 3}
       propertyPath: DebugObjectives.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
         type: 3}
       propertyPath: DebugObjectives.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: dd6dcfefbc2910a4d9e0464de5fac11c,
+      objectReference: {fileID: 11400000, guid: 673cd29fd285c5f4cbcb2b1a554c7efe,
         type: 2}
     - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
         type: 3}
       propertyPath: DebugObjectives.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 771faec44bdae8f4a9ff34a9357abcca,
+      objectReference: {fileID: 11400000, guid: 72df9116a5e1d3c4f9b82790413e8e3b,
         type: 2}
     - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
         type: 3}
       propertyPath: DebugObjectives.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: c560cb2d3ff9c014fbf1f54b6f872396,
+      objectReference: {fileID: 11400000, guid: d820bcaff84ccdc47a779c2d465f9156,
+        type: 2}
+    - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
+        type: 3}
+      propertyPath: DebugObjectives.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: dd6dcfefbc2910a4d9e0464de5fac11c,
+        type: 2}
+    - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
+        type: 3}
+      propertyPath: DebugObjectives.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: b144696e03eaaf24bbb57db8d8e58eef,
+        type: 2}
+    - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
+        type: 3}
+      propertyPath: DebugObjectives.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 673cd29fd285c5f4cbcb2b1a554c7efe,
+        type: 2}
+    - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
+        type: 3}
+      propertyPath: DebugObjectives.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 72df9116a5e1d3c4f9b82790413e8e3b,
+        type: 2}
+    - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
+        type: 3}
+      propertyPath: DebugObjectives.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: d820bcaff84ccdc47a779c2d465f9156,
+        type: 2}
+    - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
+        type: 3}
+      propertyPath: DebugObjectives.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: dd6dcfefbc2910a4d9e0464de5fac11c,
+        type: 2}
+    - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
+        type: 3}
+      propertyPath: DebugObjectives.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: b144696e03eaaf24bbb57db8d8e58eef,
         type: 2}
     - target: {fileID: 5896227825688656333, guid: 7ace24ef26e949c4d8ff163b334958f9,
         type: 3}

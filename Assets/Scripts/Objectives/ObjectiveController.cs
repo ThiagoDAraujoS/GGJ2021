@@ -68,7 +68,7 @@ public class ObjectiveController : MonoBehaviour
 			availableIndexes.RemoveAt(index);
 
 			var def = this.AvailableCollectibles[selectionIndex];
-			int descriptionIndex = Random.Range(0, def.Descriptions.Count - 1);
+			int descriptionIndex = Random.Range(0, def.Descriptions.Count);
 
 			_objectives.Add(new Objective(def, def.Descriptions[descriptionIndex]));
 		}
@@ -80,7 +80,7 @@ public class ObjectiveController : MonoBehaviour
 		foreach (var def in this.DebugObjectives)
 		{
 			// TODO: Maybe figure out how to hard code the description it picks? No idea how to do this though.
-			int descriptionIndex = Random.Range(0, def.Descriptions.Count - 1);
+			int descriptionIndex = Random.Range(0, def.Descriptions.Count);
 			_objectives.Add(new Objective(def, def.Descriptions[descriptionIndex]));
 		}
 	}

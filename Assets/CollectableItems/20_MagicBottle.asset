@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Magic Bottle
   Descriptions:
-  - I didin't even have time to drink my potion before I got attacked. Please return
-    my bottle to me.
+  - I didin't even have time to drink my potion before I got attacked.
   - I lost my magic potion! How will I ever defeat my enemies without it?
-  - If you find my bottle don't you dare drink from it, it contains poison. Just
-    return it to me at once.
+  - If you find my bottle don't you dare drink from it, it contains poison.
   Sprite: {fileID: -3158666960294290095, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

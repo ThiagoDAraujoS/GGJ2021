@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Geode
   Descriptions:
-  - Please get back my Gem. I mean it could be a gem, gotta crack it open first to
-    find out.
-  Sprite: {fileID: 0}
+  - Please get back my gem. I think it's a gem... gotta crack it open first.
+  Sprite: {fileID: -4806659932364735368, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

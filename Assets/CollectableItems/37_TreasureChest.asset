@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Treasure Chest
   Descriptions:
-  - I got defeated before I could carry the chest I found out the dungeon. Please
-    ge back my loot!
+  - I got defeated before I could carry the chest I found out. Please return my loot!
   - I got a chest for defeating this boss monster but then a Slime defeated me...
-    what a day. Please return it to me.
-  - I found some treasure in the dungeon earlier but couldn't retrieve it. Please
-    bring me back this treasure chest!
+    what a day.
+  - I found some treasure in a chest earlier but couldn't retrieve it.
   Sprite: {fileID: 3983453950239091750, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Book of Names
   Descriptions:
-  - I've lost a legendary tome that contains the name of everyone in the world. It's
-    unique in the world, you must retrieve it!
+  - I've lost a legendary tome that contains the name of everyone in the world.
   - Please you must find my book. It is a mystical tome of names.
-  - Please return my book to me. It is a relic of an anciant civilisation that predates
-    our own. It was used in conjunction with an item called a... fhone?
+  - Please return my book to me. It is a relic of an anciant civilization!
   Sprite: {fileID: 8990187706960978137, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

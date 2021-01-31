@@ -15,7 +15,6 @@ MonoBehaviour:
   Name: Diamond Pendant
   Descriptions:
   - I've lost my most valuable pendant, please fetch it for me.
-  - I saw a beautiful gem in the dungeon but couldn't get to it, find it and bring
-    it to me.
+  - I saw a beautiful gem in the dungeon, find it and bring it to me.
   - Please return my precious pendant to me.
   Sprite: {fileID: 3088064286467380776, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

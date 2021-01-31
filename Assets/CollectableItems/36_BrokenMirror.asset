@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Broken Mirror
   Descriptions:
-  - Please find my magic mirror. I fear I will face 7 years bad luck if you dont
-    find it soon.
+  - Please find my magic mirror. I may face 7 years bad luck if you dont find it.
   - I dropped my mirror, please be a dear and fetch it back for me will you?
-  - Please find my Mirror. Before being carried out the dungeon I saw a beast step
-    on it and I fear the worse.
+  - Before being carried out the dungeon I saw a beast step on my mirror.
   Sprite: {fileID: 8162691221070881113, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

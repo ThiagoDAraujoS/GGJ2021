@@ -15,7 +15,6 @@ MonoBehaviour:
   Name: Hero's Shield
   Descriptions:
   - My shield belonged to a great hero, I simply must have it back!
-  - A saw a heroic looking shield in the dungeon but got defeated before I could
-    get to it. Please find it for me.
+  - A saw a heroic shield in the dungeon but got defeated before I could get to it.
   - The shield I lost is pointy at the bottom, that's all I know about it.
   Sprite: {fileID: -5402552348727002229, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}

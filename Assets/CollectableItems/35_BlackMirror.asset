@@ -15,8 +15,6 @@ MonoBehaviour:
   Name: Black Mirror
   Descriptions:
   - Please find my mirror of darkness, I can't bear to be appart from it.
-  - 'I''ve lost an anciant mirror from a civilisation long lost. Please bring it
-    back to me so I can research it further. '
-  - I lost a strange reflective device in the dungeon. It looks like a mirror but
-    it's true purpose remains hidden.
+  - I've lost an anciant mirror from a civilization lost. I need it for further research!
+  - I lost a strange reflective device in the dungeon. I think it's a mirror?
   Sprite: {fileID: -8978773722904171595, guid: 29a38bd3e935c6e4b9fafb4b04e7a0a5, type: 3}
