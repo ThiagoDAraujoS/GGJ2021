@@ -11,7 +11,7 @@ public struct DebugVariables
 	private const bool _debugEnabled = true;
 
 	// Debug Variables
-	private const bool _dropAreaRuntimeVisualsEnabled = true;
+	private const bool _dropAreaRuntimeVisualsEnabled = false;
 	private const bool _exitAreaRuntimeVisualsEnabled = true;
 
 	public bool DropAreaRuntimeVisualsEnabled { get { return _debugEnabled && _dropAreaRuntimeVisualsEnabled; } }
