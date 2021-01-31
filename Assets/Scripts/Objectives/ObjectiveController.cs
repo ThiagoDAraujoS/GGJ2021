@@ -6,7 +6,7 @@ public class ObjectiveController : MonoBehaviour
 {
 	private class Constants
 	{
-		public const float MaxTime = 3 * 60; // Seconds
+		public const float MaxTime = 5 * 60; // Seconds
 	}
 
 	public bool GenerateRandom = true;

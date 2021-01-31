@@ -17345,6 +17345,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
         type: 3}
+      propertyPath: TimeLimit
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
+        type: 3}
       propertyPath: BossController
       value: 
       objectReference: {fileID: 353801999}
