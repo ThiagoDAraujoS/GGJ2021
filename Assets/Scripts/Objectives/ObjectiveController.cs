@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class ObjectiveController : MonoBehaviour
 {
+	private class Constants
+	{
+		public const float MaxTime = 3 * 60; // Seconds
+	}
+
 	public bool GenerateRandom = true;
 	public int ObjectiveCount = 5;
 	public List<CollectibleDefinition> AvailableCollectibles;
@@ -13,8 +18,13 @@ public class ObjectiveController : MonoBehaviour
 	public List<Objective> Objectives { get { return _objectives; } }
 	private List<Objective> _objectives = new List<Objective>();
 
+	public float TimeRemaining { get; private set; }
+	public float TimePercent { get { return this.TimeRemaining / Constants.MaxTime; } }
+
 	void Start()
 	{
+		this.TimeRemaining = Constants.MaxTime;
+
 		if (this.GenerateRandom || this.DebugObjectives.Count == 0)
 			GenerateObjectives();
 		else
@@ -23,6 +33,11 @@ public class ObjectiveController : MonoBehaviour
 		Debug.Log("Target Items:");
 		foreach (var objective in _objectives)
 			Debug.Log($"{objective.Target.Name} - {objective.Description}");
+	}
+
+	private void Update()
+	{
+		this.TimeRemaining = Mathf.Max(0f, this.TimeRemaining - Time.deltaTime);
 	}
 
 	public bool CheckCollection(List<CollectibleDefinition> collectedItems)
