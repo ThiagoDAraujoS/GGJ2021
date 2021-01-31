@@ -42,7 +42,7 @@ public class DoorTrigger : MonoBehaviour
             if (!isOpen)
             {
                 OnPressurePlateDown?.Invoke();
-                AudioManager.instance.PlayDoorOpenClip();
+                AudioManager.Instance.PlayDoorOpenClip();
                 SetBoolean();
                 //door.SetActive(false);
                 door.GetComponent<Collider2D>().enabled = false;
@@ -52,7 +52,7 @@ public class DoorTrigger : MonoBehaviour
 
             {
                 OnPressurePlateUp?.Invoke();
-                AudioManager.instance.PlayDoorClosedClip();
+                AudioManager.Instance.PlayDoorClosedClip();
                 SetBoolean();
                 //door.SetActive(true);
                 door.GetComponent<Collider2D>().enabled = true;

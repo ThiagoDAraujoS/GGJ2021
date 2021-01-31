@@ -8,14 +8,16 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip DoorOpenClip;
     public AudioClip DoorCloseClip;
-    public static AudioManager instance;
+    public static AudioManager Instance;
 
-    public AudioClip[] footstepClips;
+    public AudioClip[] FootstepClips;
 
     public void PlayDoorOpenClip()
     {
         PlaybackDevice.PlayOneShot(DoorOpenClip);
     }
+
+	private bool _isWalking = false;
 
     public void PlayDoorClosedClip()
     {
@@ -24,27 +26,37 @@ public class AudioManager : MonoBehaviour
 
     public void OnEnable()
     {
-        instance = this;
+        Instance = this;
     }
 
-    private IEnumerator playFootstepsSound()
+    private IEnumerator PlayFootstepsSound()
     {
-        while (true)
-        {
-            PlaybackDevice.PlayOneShot(footstepClips[Random.Range(0, 3)]);
-            yield return new WaitForSeconds(0.35f);
-        }
-
+		if (!_isWalking)
+		{
+			_isWalking = true;
+			while (_isWalking)
+			{
+				PlaybackDevice.PlayOneShot(FootstepClips[Random.Range(0, 3)]);
+				yield return new WaitForSeconds(0.35f);
+			}
+		}
     }
 
-    public void beginPlayingFootsteps()
-        {
-        StartCoroutine(playFootstepsSound());
-        }
-    public void stopPlayingFootsteps()
+    public void BeginPlayingFootsteps()
     {
-        StopAllCoroutines();
+		StartCoroutine(PlayFootstepsSound());
     }
+
+    public void StopPlayingFootsteps()
+    {
+		//StopAllCoroutines();
+		_isWalking = false;
+    }
+
+	public void StopAllSounds()
+	{
+		StopPlayingFootsteps();
+	}
 
 }
 

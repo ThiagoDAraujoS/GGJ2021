@@ -14558,7 +14558,7 @@ MonoBehaviour:
   PlaybackDevice: {fileID: 901532358}
   DoorOpenClip: {fileID: 8300000, guid: 79eceee0f9ec12b40b402a3ac31d4431, type: 3}
   DoorCloseClip: {fileID: 8300000, guid: 19131ea4cd3379646a233ff2a32bd4b7, type: 3}
-  footstepClips:
+  FootstepClips:
   - {fileID: 8300000, guid: 3d5a67f9f982eb04ab437b2d276bc06f, type: 3}
   - {fileID: 8300000, guid: af9ba34a0b66f8345bf11a3cc0e0ed28, type: 3}
   - {fileID: 8300000, guid: 1d52dab390fc75847800315d07517341, type: 3}
@@ -55196,6 +55196,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4455408697374435049, guid: bf12c87d8e7a2de4a8b2de88f7f860df,
         type: 3}
+      propertyPath: onDisabled.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 901532359}
+    - target: {fileID: 4455408697374435049, guid: bf12c87d8e7a2de4a8b2de88f7f860df,
+        type: 3}
       propertyPath: onMovePress.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 901532359}
@@ -55216,13 +55221,18 @@ PrefabInstance:
       objectReference: {fileID: 901532359}
     - target: {fileID: 4455408697374435049, guid: bf12c87d8e7a2de4a8b2de88f7f860df,
         type: 3}
+      propertyPath: onDisabled.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StopAllSounds
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455408697374435049, guid: bf12c87d8e7a2de4a8b2de88f7f860df,
+        type: 3}
       propertyPath: onMovePress.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4455408697374435049, guid: bf12c87d8e7a2de4a8b2de88f7f860df,
         type: 3}
       propertyPath: onMovePress.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: beginPlayingFootsteps
+      value: BeginPlayingFootsteps
       objectReference: {fileID: 0}
     - target: {fileID: 4455408697374435049, guid: bf12c87d8e7a2de4a8b2de88f7f860df,
         type: 3}
@@ -55232,7 +55242,12 @@ PrefabInstance:
     - target: {fileID: 4455408697374435049, guid: bf12c87d8e7a2de4a8b2de88f7f860df,
         type: 3}
       propertyPath: onMoveRelease.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StopAllCoroutines
+      value: StopPlayingFootsteps
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455408697374435049, guid: bf12c87d8e7a2de4a8b2de88f7f860df,
+        type: 3}
+      propertyPath: onDisabled.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4455408697374435049, guid: bf12c87d8e7a2de4a8b2de88f7f860df,
         type: 3}
