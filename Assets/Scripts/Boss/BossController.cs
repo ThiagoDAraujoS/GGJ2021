@@ -65,6 +65,8 @@ public class BossController : MonoBehaviour
 
 			this.enabled = true;
 			this.SpriteRenderer.enabled = true;
+
+            // TODO: Add audio here
 		}
 	}
 }

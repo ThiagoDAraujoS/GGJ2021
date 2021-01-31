@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
 		this.enabled = false;
 		animator.SetFloat("Speed", 0f);
 		onDisabled?.Invoke();
+        // TODO: disable footsteps audio GARY IS DOING THIS
 	}
 
     private void OnMovePress( InputAction.CallbackContext ctx )

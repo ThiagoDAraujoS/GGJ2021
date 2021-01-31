@@ -14,6 +14,10 @@ public class GameOverUIController : MonoBehaviour
 		public const float FadeDelay = 1f;
 	}
 
+	public string ResultText_Death = "The dungeon boss caught you!";
+	public string ResultText_Win = "Great job! You collected all the items on the list!";
+	public string ResultText_Loss = "Too bad! You missed some of the items on your list.";
+
 	public Canvas UICanvas;
 	public ObjectiveController ObjectiveController;
 	public List<Image> RequiredItemImages;
@@ -21,6 +25,9 @@ public class GameOverUIController : MonoBehaviour
 	public Image BackgroundImage;
 	public Text ItemsNeededText;
 	public Text ItemsCollectedText;
+
+	public Text ResultText;
+	public Image RestartPromptImage;
 
 	private bool _canRestart = false;
 	private InputMap _inputMap;
@@ -61,7 +68,7 @@ public class GameOverUIController : MonoBehaviour
 			}
 		}
 
-		// Updat ethe images for what we got.
+		// Update the images for what we got.
 		for (int i = 0; i < this.CollectedItemImages.Count; i++)
 		{
 			this.CollectedItemImages[i].enabled = false;
@@ -73,6 +80,19 @@ public class GameOverUIController : MonoBehaviour
 				this.CollectedItemImages[i].CrossFadeAlpha(0f, 0f, false);
 			}
 		}
+
+		string resultText = this.ResultText_Win;
+		switch (gameOverState)
+		{
+			case GameOverState.Death:
+				resultText = this.ResultText_Death;
+				break;
+			case GameOverState.IncorrectObjectives:
+				resultText = this.ResultText_Loss;
+				break;
+		}
+
+		this.ResultText.text = resultText;
 	}
 
 	public void ShowUI()
@@ -99,7 +119,8 @@ public class GameOverUIController : MonoBehaviour
 		if (_canRestart)
 		{
 			_canRestart = false;
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			StopAllCoroutines();
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // TODO: Transition this back to the main screen when we have one.
 		}
 	}
 
@@ -109,7 +130,11 @@ public class GameOverUIController : MonoBehaviour
 
 		// Fade in BG.
 		this.BackgroundImage.CrossFadeAlpha(1f, fadeTime, false);
-		yield return new WaitForSeconds(Constants.FadeTime);
+		yield return new WaitForSeconds(Constants.FadeDelay);
+
+		// Fade in result text.
+		this.ResultText.CrossFadeAlpha(1f, fadeTime, false);
+		yield return new WaitForSeconds(Constants.FadeDelay);
 
 		// Fade in items needed text and images.
 		this.ItemsNeededText.CrossFadeAlpha(1f, fadeTime, false);
@@ -133,6 +158,14 @@ public class GameOverUIController : MonoBehaviour
 
 		_inputMap.Enable();
 		_canRestart = true;
+
+		while (true)
+		{
+			this.RestartPromptImage.CrossFadeAlpha(1f, fadeTime, false);
+			yield return new WaitForSeconds(Constants.FadeDelay);
+			this.RestartPromptImage.CrossFadeAlpha(0f, fadeTime, false);
+			yield return new WaitForSeconds(1.1f * fadeTime);
+		}
 	}
 
 	private IEnumerator HandleFadeOut(float fadeTime)
