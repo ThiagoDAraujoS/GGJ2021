@@ -7,6 +7,7 @@ public class ExitController : MonoBehaviour
 	public List<ItemDropArea> LinkedDropAreas;
 	public SpriteRenderer EditorDisplayRenderer;
 	public ObjectiveController ObjectiveController;
+	public GameplayStateManager GameplayStateManager;
 
 	private void Awake()
 	{
@@ -22,7 +23,6 @@ public class ExitController : MonoBehaviour
 		msg.Append("Collected Items: {");
 		bool wroteFirst = false;
 
-		//foreach (ItemDropArea dropArea in this.LinkedDropAreas)
 		for (int i = 0; i < this.LinkedDropAreas.Count; i++)
 		{
 			var dropArea = this.LinkedDropAreas[i];
@@ -44,10 +44,6 @@ public class ExitController : MonoBehaviour
 		Debug.Log(msg.ToString());
 
 		bool collectionCorrect = this.ObjectiveController.CheckCollection(collectedItems);
-
-		if (collectionCorrect)
-			Debug.Log("All items found, you win!");
-		else
-			Debug.Log("You didn't collect all the items, sorry!");
+		this.GameplayStateManager.EndGame((collectionCorrect) ? GameOverState.Success : GameOverState.IncorrectObjectives);
 	}
 }
