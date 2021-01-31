@@ -125,6 +125,33 @@ TextureImporter:
   - first:
       213: 8693686533122867975
     second: GameJam_Floor_40
+  - first:
+      213: -8109359490045114451
+    second: GameJam_Floor_41
+  - first:
+      213: -6888903260067742736
+    second: GameJam_Floor_42
+  - first:
+      213: 1090622619783034798
+    second: GameJam_Floor_43
+  - first:
+      213: 3914156204868569643
+    second: GameJam_Floor_44
+  - first:
+      213: -1416692141397566290
+    second: GameJam_Floor_45
+  - first:
+      213: 4527596483246214671
+    second: GameJam_Floor_46
+  - first:
+      213: 1032599118436867160
+    second: GameJam_Floor_47
+  - first:
+      213: -3899778238031190067
+    second: GameJam_Floor_48
+  - first:
+      213: 3028231288554301843
+    second: GameJam_Floor_49
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1044,8 +1071,8 @@ TextureImporter:
       name: GameJam_Floor_39
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -1065,8 +1092,8 @@ TextureImporter:
       name: GameJam_Floor_40
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 64
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -1078,6 +1105,195 @@ TextureImporter:
       bones: []
       spriteID: 703c26b37dd26a870800000000000000
       internalID: 8693686533122867975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_Floor_41
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da70bef4284c57f80800000000000000
+      internalID: -8109359490045114451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_Floor_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbb1a3ebf2b560a0800000000000000
+      internalID: -6888903260067742736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_Floor_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea77c2c8e7ba22f00800000000000000
+      internalID: 1090622619783034798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_Floor_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a059a8450e15630800000000000000
+      internalID: 3914156204868569643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_Floor_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac19ebd006e65ce0800000000000000
+      internalID: -1416692141397566290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_Floor_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ec236630145de30800000000000000
+      internalID: 4527596483246214671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_Floor_47
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c9fc16d67845e00800000000000000
+      internalID: 1032599118436867160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_Floor_48
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc72a5bba5431e9c0800000000000000
+      internalID: -3899778238031190067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameJam_Floor_49
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399a00c0050760a20800000000000000
+      internalID: 3028231288554301843
       vertices: []
       indices: 
       edges: []
