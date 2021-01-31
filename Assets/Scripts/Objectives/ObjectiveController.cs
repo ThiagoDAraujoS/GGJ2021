@@ -20,7 +20,7 @@ public class ObjectiveController : MonoBehaviour
 
 		Debug.Log("Target Items:");
 		foreach (var objective in _objectives)
-			Debug.Log(objective.Target.Name);
+			Debug.Log($"{objective.Target.Name} - {objective.Description}");
 	}
 
 	public bool CheckCollection(List<CollectibleDefinition> collectedItems)
@@ -65,7 +65,10 @@ public class ObjectiveController : MonoBehaviour
 			int selectionIndex = availableIndexes[index];
 			availableIndexes.RemoveAt(index);
 
-			_objectives.Add(new Objective(this.AvailableCollectibles[selectionIndex]));
+			var def = this.AvailableCollectibles[selectionIndex];
+			int descriptionIndex = Random.Range(0, def.Descriptions.Count - 1);
+
+			_objectives.Add(new Objective(def, def.Descriptions[descriptionIndex]));
 		}
 	}
 
@@ -73,6 +76,10 @@ public class ObjectiveController : MonoBehaviour
 	{
 		Debug.Log("[ObjectiveController] Using debug objectives.");
 		foreach (var def in this.DebugObjectives)
-			_objectives.Add(new Objective(def));
+		{
+			// TODO: Maybe figure out how to hard code the description it picks? No idea how to do this though.
+			int descriptionIndex = Random.Range(0, def.Descriptions.Count - 1);
+			_objectives.Add(new Objective(def, def.Descriptions[descriptionIndex]));
+		}
 	}
 }

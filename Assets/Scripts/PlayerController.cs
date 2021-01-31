@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
 	private CarryController carryController;
 
 	[SerializeField]
-	private UIController uiController;
+	private TaskUIController uiController;
 
     //hidden variables
     private InputMap input;
