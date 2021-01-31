@@ -76,7 +76,7 @@ public class GameOverUIController : MonoBehaviour
 
 		foreach (var component in this.UICanvas.GetComponentsInChildren<Image>())
 		{
-			component.CrossFadeAlpha(1f, Constants.FadeTime, false);
+			component.CrossFadeAlpha(1f, fadeTime, false);
 		}
 
 		foreach (var component in this.UICanvas.GetComponentsInChildren<Text>())
