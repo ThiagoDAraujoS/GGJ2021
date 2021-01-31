@@ -22,7 +22,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Map",
+                    "name": "TaskList",
                     "type": "Button",
                     "id": "bd93fb52-4322-4f98-90e5-e496af9aff71",
                     "expectedControlType": "Button",
@@ -170,7 +170,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Map",
+                    "action": "TaskList",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -181,7 +181,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Map",
+                    "action": "TaskList",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

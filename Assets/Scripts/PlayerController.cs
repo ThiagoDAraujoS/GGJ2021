@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour
 	[SerializeField]
 	private CarryController carryController;
 
+	[SerializeField]
+	private UIController uiController;
+
     //hidden variables
     private InputMap input;
     private Vector2 moveVector;
@@ -27,13 +30,15 @@ public class PlayerController : MonoBehaviour
     public UnityEvent onMoveRelease;
 
     //messages
-    private void Awake() {
+    private void Awake()
+	{
         input = new InputMap();
         rb2D = GetComponentInChildren<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
-    private void OnMovePress( InputAction.CallbackContext ctx ) {
+    private void OnMovePress( InputAction.CallbackContext ctx )
+	{
         Vector2 vex = ctx.ReadValue<Vector2>();
 		carryController.UpdateForMove(vex);
 		animator.SetFloat( "Horizontal", vex.x );
@@ -41,38 +46,56 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat( "Speed", vex.magnitude );
         if (moveVector.magnitude == 0 && vex.magnitude != 0)
         {
-        onMovePress?.Invoke();
+			onMovePress?.Invoke();
         }
         moveVector = ctx.ReadValue<Vector2>();
 
     }
 
-    private void OnMoveRelease( InputAction.CallbackContext ctx ) {
-
+    private void OnMoveRelease( InputAction.CallbackContext ctx )
+	{
         moveVector = Vector2.zero;
         animator.SetFloat( "Speed", moveVector.magnitude );
         onMoveRelease?.Invoke();
     }
 
-	private void OnInteract(InputAction.CallbackContext context) {
+	private void OnInteract(InputAction.CallbackContext context)
+	{
 		carryController.HandleInteractPressed();
 	}
 
-	private void OnEnable() {
+	private void OnMapPress(InputAction.CallbackContext context)
+	{
+		uiController.ShowUI();
+	}
+
+	private void OnMapRelease(InputAction.CallbackContext context)
+	{
+		uiController.HideUI();
+	}
+
+	private void OnEnable()
+	{
         input.Player.Move.performed += OnMovePress;
         input.Player.Move.canceled += OnMoveRelease;
 		input.Player.Interact.performed += OnInteract;
-        input.Enable();
+		input.Player.TaskList.performed += OnMapPress;
+		input.Player.TaskList.canceled += OnMapRelease;
+		input.Enable();
     }
 
-    private void OnDisable() {
+    private void OnDisable()
+	{
 		input.Player.Move.performed -= OnMovePress;
         input.Player.Move.canceled -= OnMoveRelease;
 		input.Player.Interact.performed -= OnInteract;
+		input.Player.TaskList.performed -= OnMapPress;
+		input.Player.TaskList.canceled -= OnMapRelease;
 		input.Disable();
 	}
 
-    private void FixedUpdate() {
+    private void FixedUpdate()
+	{
         //force movement
         rb2D.AddForce( moveVector * moveSpeed * Time.fixedDeltaTime * 5000f, ForceMode2D.Force );
         
@@ -80,7 +103,8 @@ public class PlayerController : MonoBehaviour
         //rb2D.MovePosition( rb2D.position + moveVector * moveSpeed * Time.fixedDeltaTime );
     }
 
-	private void Update() {
+	private void Update()
+	{
 		transform.position = new Vector3(transform.position.x, transform.position.y, characterCollider.bounds.max.y);
 	}
 }

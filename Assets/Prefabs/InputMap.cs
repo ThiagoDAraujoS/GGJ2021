@@ -35,7 +35,7 @@ public class @InputMap : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Map"",
+                    ""name"": ""TaskList"",
                     ""type"": ""Button"",
                     ""id"": ""bd93fb52-4322-4f98-90e5-e496af9aff71"",
                     ""expectedControlType"": ""Button"",
@@ -183,7 +183,7 @@ public class @InputMap : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Map"",
+                    ""action"": ""TaskList"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -194,7 +194,7 @@ public class @InputMap : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Map"",
+                    ""action"": ""TaskList"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -774,7 +774,7 @@ public class @InputMap : IInputActionCollection, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
-        m_Player_Map = m_Player.FindAction("Map", throwIfNotFound: true);
+        m_Player_TaskList = m_Player.FindAction("TaskList", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -838,14 +838,14 @@ public class @InputMap : IInputActionCollection, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Interact;
-    private readonly InputAction m_Player_Map;
+    private readonly InputAction m_Player_TaskList;
     public struct PlayerActions
     {
         private @InputMap m_Wrapper;
         public PlayerActions(@InputMap wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
-        public InputAction @Map => m_Wrapper.m_Player_Map;
+        public InputAction @TaskList => m_Wrapper.m_Player_TaskList;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -861,9 +861,9 @@ public class @InputMap : IInputActionCollection, IDisposable
                 @Interact.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
-                @Map.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMap;
-                @Map.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMap;
-                @Map.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMap;
+                @TaskList.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTaskList;
+                @TaskList.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTaskList;
+                @TaskList.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTaskList;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -874,9 +874,9 @@ public class @InputMap : IInputActionCollection, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
-                @Map.started += instance.OnMap;
-                @Map.performed += instance.OnMap;
-                @Map.canceled += instance.OnMap;
+                @TaskList.started += instance.OnTaskList;
+                @TaskList.performed += instance.OnTaskList;
+                @TaskList.canceled += instance.OnTaskList;
             }
         }
     }
@@ -1035,7 +1035,7 @@ public class @InputMap : IInputActionCollection, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
-        void OnMap(InputAction.CallbackContext context);
+        void OnTaskList(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
