@@ -11,6 +11,7 @@ public class BossController : MonoBehaviour
 	private float _angle = 0f;
 	private bool _rotating = true;
 	private float _zValue = 0f;
+	private bool _canSpawn = true;
 
 	// Start is called before the first frame update
 	private void Start()
@@ -36,24 +37,34 @@ public class BossController : MonoBehaviour
 		}
 	}
 
+	public void Disable()
+	{
+		this.enabled = false;
+		_canSpawn = false;
+	}
+
 	public void Summon()
 	{
-		float xSign = (Random.Range(0, 2) == 0) ? -1 : 1;
-		float ySign = (Random.Range(0, 2) == 0) ? -1 : 1;
-		Vector2 p = new Vector2(
-			xSign * Random.Range(0.01f, 1f),
-			ySign * Random.Range(0.01f, 1f)
-		);
-		p.Normalize();
+		if (_canSpawn)
+		{
+			_canSpawn = false;
+			float xSign = (Random.Range(0, 2) == 0) ? -1 : 1;
+			float ySign = (Random.Range(0, 2) == 0) ? -1 : 1;
+			Vector2 p = new Vector2(
+				xSign * Random.Range(0.01f, 1f),
+				ySign * Random.Range(0.01f, 1f)
+			);
+			p.Normalize();
 
-		float dist = (float)Random.Range(50, 100);
+			float dist = (float)Random.Range(50, 100);
 
-		_target = this.Player.transform.position;
+			_target = this.Player.transform.position;
 
-		Vector2 startPosition = _target + dist * p;
-		this.transform.position = new Vector3(startPosition.x, startPosition.y, this.transform.position.z);
+			Vector2 startPosition = _target + dist * p;
+			this.transform.position = new Vector3(startPosition.x, startPosition.y, this.transform.position.z);
 
-		this.enabled = true;
-		this.SpriteRenderer.enabled = true;
+			this.enabled = true;
+			this.SpriteRenderer.enabled = true;
+		}
 	}
 }

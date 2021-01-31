@@ -1,16 +1,19 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class GameplayStateManager : MonoBehaviour
 {
 	public PlayerController PlayerController;
-	public TaskUIController TaskUIController;
 	public TimerUIController TimerUIController;
 	public BossController BossController;
+
+	public TaskUIController TaskUIController;
+	public GameOverUIController GameOverUIController;
 
 	[HideInInspector]
 	public GameOverState Result { get; private set; } = GameOverState.Death;
 
-	public void EndGame(GameOverState gameOverState)
+	public void EndGame(GameOverState gameOverState, List<CollectibleDefinition> collectedItems)
 	{
 		this.Result = gameOverState;
 		Debug.Log("Game has ended: " + this.Result);
@@ -18,9 +21,13 @@ public class GameplayStateManager : MonoBehaviour
 		// Disable controllers we don't need anymore.
 		this.PlayerController.Disable();
 		this.TimerUIController.enabled = false;
-		this.BossController.enabled = false;
+		this.BossController.Disable();
+
+		// Update Game Over UI
+		this.GameOverUIController.UpdateForGameOver(gameOverState, collectedItems);
 
 		// Show UI
 		this.TaskUIController.ShowUI();
+		this.GameOverUIController.ShowUI();
 	}
 }

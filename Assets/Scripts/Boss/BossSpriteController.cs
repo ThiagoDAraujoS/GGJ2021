@@ -9,7 +9,7 @@ public class BossSpriteController : MonoBehaviour
 		var playerController = collision.GetComponentInParent<PlayerController>();
 		if (playerController != null)
 		{
-			this.GameplayStateManager.EndGame(GameOverState.Death);
+			this.GameplayStateManager.EndGame(GameOverState.Death, null);
 		}
 	}
 }

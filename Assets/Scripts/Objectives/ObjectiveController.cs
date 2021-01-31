@@ -34,6 +34,8 @@ public class ObjectiveController : MonoBehaviour
 		else
 			GenerateDebug();
 
+		this.Objectives.Sort((lhs, rhs) => lhs.Target.Name.CompareTo(rhs.Target.Name));
+
 		Debug.Log("Target Items:");
 		foreach (var objective in _objectives)
 			Debug.Log($"{objective.Target.Name} - {objective.Description}");

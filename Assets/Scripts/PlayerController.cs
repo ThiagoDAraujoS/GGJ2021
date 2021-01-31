@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
 	//events
 	public UnityEvent onMovePress;
     public UnityEvent onMoveRelease;
+	public UnityEvent onDisabled;
 
     //messages
     private void Awake()
@@ -41,6 +42,7 @@ public class PlayerController : MonoBehaviour
 	{
 		this.enabled = false;
 		animator.SetFloat("Speed", 0f);
+		onDisabled?.Invoke();
 	}
 
     private void OnMovePress( InputAction.CallbackContext ctx )

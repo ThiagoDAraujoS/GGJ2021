@@ -44,6 +44,9 @@ public class ExitController : MonoBehaviour
 		Debug.Log(msg.ToString());
 
 		bool collectionCorrect = this.ObjectiveController.CheckCollection(collectedItems);
-		this.GameplayStateManager.EndGame((collectionCorrect) ? GameOverState.Success : GameOverState.IncorrectObjectives);
+		this.GameplayStateManager.EndGame(
+			(collectionCorrect) ? GameOverState.Success : GameOverState.IncorrectObjectives,
+			collectedItems
+		);
 	}
 }
