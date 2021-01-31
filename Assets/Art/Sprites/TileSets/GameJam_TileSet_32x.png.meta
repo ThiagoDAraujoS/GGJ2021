@@ -379,7 +379,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 607
+        y: 608
         width: 32
         height: 32
       alignment: 0
@@ -404,7 +404,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 607
+        y: 608
         width: 32
         height: 32
       alignment: 0
@@ -412,8 +412,8 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 10, y: 16}
-        - {x: 10, y: -16}
+      - - {x: 11, y: 16}
+        - {x: 11, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
       tessellationDetail: 0
@@ -429,7 +429,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 575
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -455,7 +455,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 575
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -463,9 +463,9 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 10, y: 16}
-        - {x: 10, y: -12}
-        - {x: 10, y: -16}
+      - - {x: 11, y: 16}
+        - {x: 11, y: -12}
+        - {x: 11, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
       tessellationDetail: 0
@@ -480,8 +480,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_4
       rect:
         serializedVersion: 2
-        x: 96
-        y: 575
+        x: 0
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -501,8 +501,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_5
       rect:
         serializedVersion: 2
-        x: 128
-        y: 575
+        x: 64
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -522,8 +522,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_6
       rect:
         serializedVersion: 2
-        x: 160
-        y: 575
+        x: 96
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -543,8 +543,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_7
       rect:
         serializedVersion: 2
-        x: 192
-        y: 575
+        x: 128
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -564,8 +564,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_8
       rect:
         serializedVersion: 2
-        x: 224
-        y: 575
+        x: 160
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -585,8 +585,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_9
       rect:
         serializedVersion: 2
-        x: 256
-        y: 575
+        x: 192
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -606,8 +606,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 543
+        x: 224
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -635,8 +635,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_11
       rect:
         serializedVersion: 2
-        x: 32
-        y: 543
+        x: 256
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -656,8 +656,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_12
       rect:
         serializedVersion: 2
-        x: 64
-        y: 543
+        x: 0
+        y: 512
         width: 32
         height: 32
       alignment: 0
@@ -669,10 +669,10 @@ TextureImporter:
         - {x: -16, y: 7}
         - {x: 16, y: 7}
         - {x: 16, y: 16}
-      - - {x: -16, y: -15}
-        - {x: -16, y: -5}
-        - {x: -11, y: -5}
-        - {x: -11, y: -15}
+      - - {x: 11, y: -16}
+        - {x: 11, y: -6}
+        - {x: 16, y: -6}
+        - {x: 16, y: -16}
       tessellationDetail: 0
       bones: []
       spriteID: 4373d3d83048ee340800000000000000
@@ -685,8 +685,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_13
       rect:
         serializedVersion: 2
-        x: 96
-        y: 543
+        x: 32
+        y: 512
         width: 32
         height: 32
       alignment: 0
@@ -710,8 +710,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_14
       rect:
         serializedVersion: 2
-        x: 128
-        y: 543
+        x: 64
+        y: 512
         width: 32
         height: 32
       alignment: 0
@@ -735,8 +735,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_15
       rect:
         serializedVersion: 2
-        x: 160
-        y: 543
+        x: 96
+        y: 512
         width: 32
         height: 32
       alignment: 0
@@ -760,8 +760,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_16
       rect:
         serializedVersion: 2
-        x: 192
-        y: 543
+        x: 128
+        y: 512
         width: 32
         height: 32
       alignment: 0
@@ -785,8 +785,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_17
       rect:
         serializedVersion: 2
-        x: 224
-        y: 543
+        x: 160
+        y: 512
         width: 32
         height: 32
       alignment: 0
@@ -810,8 +810,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_18
       rect:
         serializedVersion: 2
-        x: 256
-        y: 543
+        x: 192
+        y: 512
         width: 32
         height: 32
       alignment: 0
@@ -835,8 +835,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_19
       rect:
         serializedVersion: 2
-        x: 0
-        y: 511
+        x: 224
+        y: 512
         width: 32
         height: 32
       alignment: 0
@@ -864,8 +864,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_20
       rect:
         serializedVersion: 2
-        x: 32
-        y: 511
+        x: 256
+        y: 512
         width: 32
         height: 32
       alignment: 0
@@ -893,8 +893,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_21
       rect:
         serializedVersion: 2
-        x: 64
-        y: 511
+        x: 0
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -922,8 +922,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_22
       rect:
         serializedVersion: 2
-        x: 96
-        y: 511
+        x: 32
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -947,8 +947,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_23
       rect:
         serializedVersion: 2
-        x: 128
-        y: 511
+        x: 64
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -968,8 +968,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_24
       rect:
         serializedVersion: 2
-        x: 160
-        y: 511
+        x: 96
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -993,8 +993,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_25
       rect:
         serializedVersion: 2
-        x: 192
-        y: 511
+        x: 128
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -1018,8 +1018,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_26
       rect:
         serializedVersion: 2
-        x: 224
-        y: 511
+        x: 160
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -1039,8 +1039,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_27
       rect:
         serializedVersion: 2
-        x: 256
-        y: 511
+        x: 192
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -1064,8 +1064,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_28
       rect:
         serializedVersion: 2
-        x: 0
-        y: 479
+        x: 224
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -1089,8 +1089,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_29
       rect:
         serializedVersion: 2
-        x: 32
-        y: 479
+        x: 256
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -1114,8 +1114,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_30
       rect:
         serializedVersion: 2
-        x: 64
-        y: 479
+        x: 0
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -1123,10 +1123,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -16, y: -5}
+      - - {x: -16, y: 16}
         - {x: -16, y: -16}
-        - {x: -11, y: -16}
-        - {x: -11, y: -5}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: 06b2bd8f4000a86b0800000000000000
@@ -1139,8 +1139,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_31
       rect:
         serializedVersion: 2
-        x: 96
-        y: 479
+        x: 32
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -1148,9 +1148,9 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 11, y: 16}
-        - {x: 11, y: 7}
-        - {x: 16, y: 7}
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
         - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
@@ -1164,8 +1164,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_32
       rect:
         serializedVersion: 2
-        x: 128
-        y: 479
+        x: 64
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -1174,8 +1174,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -16, y: 16}
-        - {x: -16, y: 8}
-        - {x: 16, y: 8}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
         - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
@@ -1189,8 +1189,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_33
       rect:
         serializedVersion: 2
-        x: 160
-        y: 479
+        x: 96
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -1214,8 +1214,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_34
       rect:
         serializedVersion: 2
-        x: 192
-        y: 479
+        x: 128
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -1239,8 +1239,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_35
       rect:
         serializedVersion: 2
-        x: 224
-        y: 479
+        x: 160
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -1264,8 +1264,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_36
       rect:
         serializedVersion: 2
-        x: 256
-        y: 479
+        x: 0
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -1289,8 +1289,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_37
       rect:
         serializedVersion: 2
-        x: 0
-        y: 447
+        x: 32
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -1300,9 +1300,7 @@ TextureImporter:
       physicsShape:
       - - {x: -16, y: 16}
         - {x: -16, y: -16}
-        - {x: -11, y: -16}
-        - {x: -11, y: 8}
-        - {x: 16, y: 8}
+        - {x: 16, y: -16}
         - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
@@ -1316,8 +1314,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_38
       rect:
         serializedVersion: 2
-        x: 32
-        y: 447
+        x: 64
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -1326,8 +1324,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -16, y: 16}
-        - {x: -16, y: 13}
-        - {x: 16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
         - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
@@ -1341,8 +1339,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_39
       rect:
         serializedVersion: 2
-        x: 64
-        y: 447
+        x: 96
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -1368,8 +1366,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_40
       rect:
         serializedVersion: 2
-        x: 96
-        y: 447
+        x: 128
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -1395,8 +1393,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_41
       rect:
         serializedVersion: 2
-        x: 128
-        y: 447
+        x: 160
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -1420,8 +1418,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_42
       rect:
         serializedVersion: 2
-        x: 160
-        y: 447
+        x: 0
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1430,9 +1428,7 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -16, y: 16}
-        - {x: -16, y: 8}
-        - {x: 12, y: 8}
-        - {x: 12, y: -16}
+        - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
       tessellationDetail: 0
@@ -1447,8 +1443,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_43
       rect:
         serializedVersion: 2
-        x: 0
-        y: 415
+        x: 32
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1458,8 +1454,8 @@ TextureImporter:
       physicsShape:
       - - {x: -16, y: 16}
         - {x: -16, y: -16}
-        - {x: -11, y: -16}
-        - {x: -11, y: 16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: 1b07ac95b11fa0370800000000000000
@@ -1472,8 +1468,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_45
       rect:
         serializedVersion: 2
-        x: 64
-        y: 415
+        x: 96
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1498,8 +1494,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_46
       rect:
         serializedVersion: 2
-        x: 96
-        y: 415
+        x: 128
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1523,8 +1519,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_47
       rect:
         serializedVersion: 2
-        x: 128
-        y: 415
+        x: 160
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1544,8 +1540,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_48
       rect:
         serializedVersion: 2
-        x: 160
-        y: 415
+        x: 0
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1553,8 +1549,8 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 12, y: 16}
-        - {x: 12, y: -16}
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
       tessellationDetail: 0
@@ -1569,8 +1565,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_49
       rect:
         serializedVersion: 2
-        x: 0
-        y: 383
+        x: 32
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1578,12 +1574,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -11, y: 16}
-        - {x: -16, y: 16}
+      - - {x: -16, y: 16}
         - {x: -16, y: -16}
         - {x: 16, y: -16}
-        - {x: 16, y: -5}
-        - {x: -11, y: -5}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: e704b06126505b610800000000000000
@@ -1596,8 +1590,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_50
       rect:
         serializedVersion: 2
-        x: 32
-        y: 383
+        x: 64
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1605,10 +1599,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -16, y: -5}
+      - - {x: -16, y: 16}
         - {x: -16, y: -16}
         - {x: 16, y: -16}
-        - {x: 16, y: -5}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: af0b7555c5831e100800000000000000
@@ -1621,8 +1615,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_51
       rect:
         serializedVersion: 2
-        x: 64
-        y: 383
+        x: 96
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1648,8 +1642,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_52
       rect:
         serializedVersion: 2
-        x: 96
-        y: 383
+        x: 128
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1675,8 +1669,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_53
       rect:
         serializedVersion: 2
-        x: 128
-        y: 383
+        x: 0
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1700,8 +1694,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_54
       rect:
         serializedVersion: 2
-        x: 160
-        y: 383
+        x: 32
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1727,8 +1721,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_55
       rect:
         serializedVersion: 2
-        x: 0
-        y: 351
+        x: 64
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1748,8 +1742,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_56
       rect:
         serializedVersion: 2
-        x: 32
-        y: 351
+        x: 96
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1769,8 +1763,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_57
       rect:
         serializedVersion: 2
-        x: 64
-        y: 351
+        x: 128
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1790,8 +1784,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_58
       rect:
         serializedVersion: 2
-        x: 96
-        y: 351
+        x: 0
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1811,8 +1805,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_59
       rect:
         serializedVersion: 2
-        x: 128
-        y: 351
+        x: 32
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1832,8 +1826,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_60
       rect:
         serializedVersion: 2
-        x: 0
-        y: 319
+        x: 64
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1853,8 +1847,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_61
       rect:
         serializedVersion: 2
-        x: 32
-        y: 319
+        x: 96
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1874,8 +1868,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_62
       rect:
         serializedVersion: 2
-        x: 64
-        y: 319
+        x: 128
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1895,8 +1889,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_63
       rect:
         serializedVersion: 2
-        x: 96
-        y: 319
+        x: 0
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -1916,8 +1910,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_64
       rect:
         serializedVersion: 2
-        x: 128
-        y: 319
+        x: 32
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -1937,8 +1931,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_65
       rect:
         serializedVersion: 2
-        x: 0
-        y: 287
+        x: 64
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -1958,8 +1952,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_66
       rect:
         serializedVersion: 2
-        x: 32
-        y: 287
+        x: 96
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -1979,8 +1973,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_67
       rect:
         serializedVersion: 2
-        x: 64
-        y: 287
+        x: 128
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2000,8 +1994,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_68
       rect:
         serializedVersion: 2
-        x: 96
-        y: 287
+        x: 0
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2021,8 +2015,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_69
       rect:
         serializedVersion: 2
-        x: 128
-        y: 287
+        x: 32
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2042,8 +2036,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_70
       rect:
         serializedVersion: 2
-        x: 0
-        y: 255
+        x: 64
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2067,8 +2061,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_71
       rect:
         serializedVersion: 2
-        x: 32
-        y: 255
+        x: 0
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -2088,8 +2082,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_72
       rect:
         serializedVersion: 2
-        x: 64
-        y: 255
+        x: 32
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -2109,8 +2103,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_73
       rect:
         serializedVersion: 2
-        x: 96
-        y: 255
+        x: 64
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -2130,8 +2124,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_74
       rect:
         serializedVersion: 2
-        x: 128
-        y: 255
+        x: 0
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -2151,8 +2145,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_75
       rect:
         serializedVersion: 2
-        x: 0
-        y: 223
+        x: 32
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -2172,8 +2166,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_76
       rect:
         serializedVersion: 2
-        x: 32
-        y: 223
+        x: 64
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -2193,8 +2187,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_77
       rect:
         serializedVersion: 2
-        x: 64
-        y: 223
+        x: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -2214,8 +2208,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_78
       rect:
         serializedVersion: 2
-        x: 0
-        y: 191
+        x: 32
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -2235,8 +2229,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_79
       rect:
         serializedVersion: 2
-        x: 32
-        y: 191
+        x: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -2256,8 +2250,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_80
       rect:
         serializedVersion: 2
-        x: 64
-        y: 191
+        x: 0
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -2277,8 +2271,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_81
       rect:
         serializedVersion: 2
-        x: 0
-        y: 159
+        x: 32
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -2298,8 +2292,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_82
       rect:
         serializedVersion: 2
-        x: 32
-        y: 159
+        x: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -2319,8 +2313,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_83
       rect:
         serializedVersion: 2
-        x: 64
-        y: 159
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -2340,8 +2334,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_84
       rect:
         serializedVersion: 2
-        x: 0
-        y: 127
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -2361,8 +2355,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_85
       rect:
         serializedVersion: 2
-        x: 32
-        y: 127
+        x: 64
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -2382,8 +2376,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_86
       rect:
         serializedVersion: 2
-        x: 64
-        y: 127
+        x: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -2403,8 +2397,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_87
       rect:
         serializedVersion: 2
-        x: 0
-        y: 95
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -2424,8 +2418,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_88
       rect:
         serializedVersion: 2
-        x: 32
-        y: 95
+        x: 64
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -2445,8 +2439,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_89
       rect:
         serializedVersion: 2
-        x: 64
-        y: 95
+        x: 0
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -2466,8 +2460,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_90
       rect:
         serializedVersion: 2
-        x: 0
-        y: 63
+        x: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -2487,8 +2481,8 @@ TextureImporter:
       name: GameJam_TileSet_32x_91
       rect:
         serializedVersion: 2
-        x: 32
-        y: 63
+        x: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -2505,102 +2499,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameJam_TileSet_32x_92
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 63
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b9b707f305875f30800000000000000
-      internalID: 4564262999439161778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameJam_TileSet_32x_93
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 31
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9855ead3b2d7ebfb0800000000000000
-      internalID: -4630125742218390135
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameJam_TileSet_32x_94
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 31
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e3ec7f9deb0d8b10800000000000000
-      internalID: 1985256125951173604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameJam_TileSet_32x_95
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 31
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 818e551b930fe7430800000000000000
-      internalID: 3782724867616794648
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: GameJam_TileSet_32x_44
       rect:
         serializedVersion: 2
-        x: 32
-        y: 415
+        x: 64
+        y: 384
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: 72c14e309d03381f0800000000000000
