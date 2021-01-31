@@ -9,6 +9,8 @@ public class ObjectiveController : MonoBehaviour
 	public List<CollectibleDefinition> AvailableCollectibles;
 	public List<CollectibleDefinition> DebugObjectives;
 
+	[HideInInspector]
+	public List<Objective> Objectives { get { return _objectives; } }
 	private List<Objective> _objectives = new List<Objective>();
 
 	void Start()
