@@ -8,7 +8,7 @@ public enum GameState { Opening, Game, Menu }
 public struct DebugVariables
 {
 	// Debug Override
-	private const bool _debugEnabled = true;
+	private const bool _debugEnabled = false;
 
 	// Debug Variables
 	private const bool _dropAreaRuntimeVisualsEnabled = false;
