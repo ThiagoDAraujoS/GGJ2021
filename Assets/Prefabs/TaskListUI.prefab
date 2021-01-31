@@ -224,7 +224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -19.600006, y: 14}
+  m_AnchoredPosition: {x: -19.600006, y: 18}
   m_SizeDelta: {x: 16, y: 16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4424686960470439241
@@ -314,7 +314,7 @@ PrefabInstance:
     - target: {fileID: 8475888154840420108, guid: b0acf758dcb7de042be7cf1a980f9f66,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 45
+      value: 51.18312
       objectReference: {fileID: 0}
     - target: {fileID: 8475888154840420108, guid: b0acf758dcb7de042be7cf1a980f9f66,
         type: 3}
@@ -359,7 +359,7 @@ PrefabInstance:
     - target: {fileID: 8475888154840420108, guid: b0acf758dcb7de042be7cf1a980f9f66,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 110
+      value: 106.91
       objectReference: {fileID: 0}
     - target: {fileID: 8475888154840420108, guid: b0acf758dcb7de042be7cf1a980f9f66,
         type: 3}
@@ -381,7 +381,9 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'Line 1
 
-        Line 2'
+        Line 2
+
+        Line 3'
       objectReference: {fileID: 0}
     - target: {fileID: 8475888154840420109, guid: b0acf758dcb7de042be7cf1a980f9f66,
         type: 3}
@@ -402,7 +404,7 @@ PrefabInstance:
     - target: {fileID: 8475888154840420109, guid: b0acf758dcb7de042be7cf1a980f9f66,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 12
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8475888154840420109, guid: b0acf758dcb7de042be7cf1a980f9f66,
         type: 3}
