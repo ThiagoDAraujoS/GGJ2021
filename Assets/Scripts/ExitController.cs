@@ -5,17 +5,18 @@ using UnityEngine;
 public class ExitController : MonoBehaviour
 {
 	public List<ItemDropArea> LinkedDropAreas;
-	public SpriteRenderer editorDisplayRenderer;
+	public SpriteRenderer EditorDisplayRenderer;
+	public ObjectiveController ObjectiveController;
 
 	private void Awake()
 	{
-		if (editorDisplayRenderer != null && !GameManager.DebugVariables.ExitAreaRuntimeVisualsEnabled)
-			editorDisplayRenderer.enabled = false;
+		if (EditorDisplayRenderer != null && !GameManager.DebugVariables.ExitAreaRuntimeVisualsEnabled)
+			EditorDisplayRenderer.enabled = false;
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		// TODO: Make this check the items we got against the list we're looking for.
+		List<CollectibleDefinition> collectedItems = new List<CollectibleDefinition>();
 
 		StringBuilder msg = new StringBuilder();
 		msg.Append("Collected Items: {");
@@ -32,6 +33,8 @@ public class ExitController : MonoBehaviour
 				wroteFirst = true;
 
 				CollectibleDisplay display = dropArea.item.GetComponent<CollectibleDisplay>();
+				collectedItems.Add(display.collectableDefinition);
+
 				msg.Append(display.collectableDefinition.Name);
 			}
 		}
@@ -39,5 +42,12 @@ public class ExitController : MonoBehaviour
 		msg.Append("}");
 
 		Debug.Log(msg.ToString());
+
+		bool collectionCorrect = this.ObjectiveController.CheckCollection(collectedItems);
+
+		if (collectionCorrect)
+			Debug.Log("All items found, you win!");
+		else
+			Debug.Log("You didn't collect all the items, sorry!");
 	}
 }
