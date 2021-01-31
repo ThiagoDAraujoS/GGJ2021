@@ -27,7 +27,7 @@ public class GameOverUIController : MonoBehaviour
 	public Text ItemsCollectedText;
 
 	public Text ResultText;
-	public Text RestartText;
+	public Image RestartPromptImage;
 
 	private bool _canRestart = false;
 	private InputMap _inputMap;
@@ -161,9 +161,9 @@ public class GameOverUIController : MonoBehaviour
 
 		while (true)
 		{
-			this.RestartText.CrossFadeAlpha(1f, fadeTime, false);
+			this.RestartPromptImage.CrossFadeAlpha(1f, fadeTime, false);
 			yield return new WaitForSeconds(Constants.FadeDelay);
-			this.RestartText.CrossFadeAlpha(0f, fadeTime, false);
+			this.RestartPromptImage.CrossFadeAlpha(0f, fadeTime, false);
 			yield return new WaitForSeconds(1.1f * fadeTime);
 		}
 	}
