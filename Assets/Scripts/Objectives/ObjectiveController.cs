@@ -21,7 +21,7 @@ public class ObjectiveController : MonoBehaviour
 	public float TimeRemaining { get; private set; }
 	public float TimePercent { get { return this.TimeRemaining / Constants.MaxTime; } }
 
-	void Start()
+	void Awake()
 	{
 		this.TimeRemaining = Constants.MaxTime;
 
