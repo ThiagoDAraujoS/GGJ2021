@@ -10,7 +10,9 @@ public class ObjectiveController : MonoBehaviour
 	}
 
 	public bool GenerateRandom = true;
+	public float TimeLimit = Constants.MaxTime;
 	public int ObjectiveCount = 5;
+	public BossController BossController;
 	public List<CollectibleDefinition> AvailableCollectibles;
 	public List<CollectibleDefinition> DebugObjectives;
 
@@ -19,11 +21,13 @@ public class ObjectiveController : MonoBehaviour
 	private List<Objective> _objectives = new List<Objective>();
 
 	public float TimeRemaining { get; private set; }
-	public float TimePercent { get { return this.TimeRemaining / Constants.MaxTime; } }
+	public float TimePercent { get { return this.TimeRemaining / this.TimeLimit; } }
+
+	private bool _timeExpired = false;
 
 	void Awake()
 	{
-		this.TimeRemaining = Constants.MaxTime;
+		this.TimeRemaining = this.TimeLimit;
 
 		if (this.GenerateRandom || this.DebugObjectives.Count == 0)
 			GenerateObjectives();
@@ -38,6 +42,15 @@ public class ObjectiveController : MonoBehaviour
 	private void Update()
 	{
 		this.TimeRemaining = Mathf.Max(0f, this.TimeRemaining - Time.deltaTime);
+
+		if (this.TimeRemaining == 0 && _timeExpired == false)
+		{
+			Debug.Log("Summon boss!");
+			this.BossController.Summon();
+			_timeExpired = true;
+
+			// Might want to disable this after we do stuff.
+		}
 	}
 
 	public bool CheckCollection(List<CollectibleDefinition> collectedItems)
