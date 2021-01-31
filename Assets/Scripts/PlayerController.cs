@@ -37,6 +37,12 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+	public void Disable()
+	{
+		this.enabled = false;
+		animator.SetFloat("Speed", 0f);
+	}
+
     private void OnMovePress( InputAction.CallbackContext ctx )
 	{
         Vector2 vex = ctx.ReadValue<Vector2>();
