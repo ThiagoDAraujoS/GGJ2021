@@ -3487,6 +3487,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1611014342356919723, guid: 150d679a7395bcf468cf21d5ead0c2fd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 150d679a7395bcf468cf21d5ead0c2fd, type: 3}
 --- !u!1001 &2963403771435730808
@@ -3699,6 +3704,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4424686959230203415, guid: ba3039a9fb27fd7458ed7793e1ece2cd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4424686960187063585, guid: ba3039a9fb27fd7458ed7793e1ece2cd,
         type: 3}
       propertyPath: ObjectiveController
