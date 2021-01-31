@@ -1,6 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameOverUIController : MonoBehaviour
@@ -18,6 +21,14 @@ public class GameOverUIController : MonoBehaviour
 	public Image BackgroundImage;
 	public Text ItemsNeededText;
 	public Text ItemsCollectedText;
+
+	private bool _canRestart = false;
+	private InputMap _inputMap;
+
+	private void Awake()
+	{
+		_inputMap = new InputMap();
+	}
 
 	private void Start()
 	{
@@ -66,14 +77,30 @@ public class GameOverUIController : MonoBehaviour
 
 	public void ShowUI()
 	{
+		this.enabled = true;
 		this.StopAllCoroutines();
 		this.StartCoroutine(HandleFadeIn(Constants.FadeTime));
 	}
 
 	public void HideUI(float fadeTime = Constants.FadeTime)
 	{
+		this.enabled = false;
 		this.StopAllCoroutines();
 		this.StartCoroutine(HandleFadeOut(fadeTime));
+	}
+
+	private void OnEnable()
+	{
+		_inputMap.Player.Interact.performed += OnInteractPressed;
+	}
+
+	private void OnInteractPressed(InputAction.CallbackContext obj)
+	{
+		if (_canRestart)
+		{
+			_canRestart = false;
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
 	}
 
 	private IEnumerator HandleFadeIn(float fadeTime)
@@ -103,6 +130,9 @@ public class GameOverUIController : MonoBehaviour
 			collectedItemImages.CrossFadeAlpha(1f, fadeTime, false);
 			yield return new WaitForSeconds(Constants.FadeDelay / this.CollectedItemImages.Count);
 		}
+
+		_inputMap.Enable();
+		_canRestart = true;
 	}
 
 	private IEnumerator HandleFadeOut(float fadeTime)
