@@ -17,7 +17,7 @@ public class AudioManager : MonoBehaviour
         PlaybackDevice.PlayOneShot(DoorOpenClip);
     }
 
-	private bool _isWalking = false;
+	private List<Coroutine> _activeFootsteps = new List<Coroutine>();
 
     public void PlayDoorClosedClip()
     {
@@ -31,26 +31,22 @@ public class AudioManager : MonoBehaviour
 
     private IEnumerator PlayFootstepsSound()
     {
-		if (!_isWalking)
+		while (true)
 		{
-			_isWalking = true;
-			while (_isWalking)
-			{
-				PlaybackDevice.PlayOneShot(FootstepClips[Random.Range(0, 3)]);
-				yield return new WaitForSeconds(0.35f);
-			}
+			PlaybackDevice.PlayOneShot(FootstepClips[Random.Range(0, 3)]);
+			yield return new WaitForSeconds(0.35f);
 		}
     }
 
     public void BeginPlayingFootsteps()
     {
-		StartCoroutine(PlayFootstepsSound());
+		_activeFootsteps.Add(StartCoroutine(PlayFootstepsSound()));
     }
 
     public void StopPlayingFootsteps()
     {
-		//StopAllCoroutines();
-		_isWalking = false;
+		foreach (var coroutine in _activeFootsteps)
+			StopCoroutine(coroutine);
     }
 
 	public void StopAllSounds()
