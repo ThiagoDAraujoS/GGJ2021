@@ -120,7 +120,7 @@ public class GameOverUIController : MonoBehaviour
 		{
 			_canRestart = false;
 			StopAllCoroutines();
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // TODO: Transition this back to the main screen when we have one.
+			SceneManager.LoadScene(0); // TODO: Transition this back to the main screen when we have one.
 		}
 	}
 
