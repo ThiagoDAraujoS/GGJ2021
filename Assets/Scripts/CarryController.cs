@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CarryController : MonoBehaviour
 {
@@ -18,7 +19,11 @@ public class CarryController : MonoBehaviour
 
 	private int _maxItems = 3;
 
-	public void UpdateForMove(Vector2 moveDir)
+    //events
+    public UnityEvent OnItemPickUp;
+    public UnityEvent OnItemDrop;
+
+    public void UpdateForMove(Vector2 moveDir)
 	{
 		isUp = moveDir.y > 0 && moveDir.x == 0;
 	}
@@ -59,6 +64,7 @@ public class CarryController : MonoBehaviour
 
 			Arrange();
             // TODO: Add audio here
+            OnItemPickUp?.Invoke();
 			_touchedCollectable = null;
 		}
 	}
@@ -96,8 +102,9 @@ public class CarryController : MonoBehaviour
 				_collectedItems.Remove(item);
 
 				Arrange();
+                OnItemDrop?.Invoke();
                 // TODO: Add audio here
-			}
+            }
 		}
 	}
 

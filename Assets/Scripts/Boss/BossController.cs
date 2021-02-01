@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class BossController : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class BossController : MonoBehaviour
 	private bool _rotating = true;
 	private float _zValue = 0f;
 	private bool _canSpawn = true;
+
+    //events
+    public UnityEvent OnBossSummon;
 
 	// Start is called before the first frame update
 	private void Start()
@@ -65,8 +69,8 @@ public class BossController : MonoBehaviour
 
 			this.enabled = true;
 			this.SpriteRenderer.enabled = true;
-
-            // TODO: Add audio here
+            OnBossSummon?.Invoke();
+           
 		}
 	}
 }

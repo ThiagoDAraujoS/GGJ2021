@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class TaskUIController : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class TaskUIController : MonoBehaviour
 	public Canvas UICanvas;
 	public ObjectiveController ObjectiveController;
 	public Text TextTemplate;
+
+    //events
+    public UnityEvent PlayScrollOpen;
+    public UnityEvent PlayScrollClosed;
 
 	private void Start()
 	{
@@ -43,12 +48,17 @@ public class TaskUIController : MonoBehaviour
 	{
 		this.StopAllCoroutines();
 		this.StartCoroutine(HandleFadeIn(Constants.FadeTime));
+        PlayScrollOpen?.Invoke();
 	}
 
 	public void HideUI(float fadeTime = Constants.FadeTime)
 	{
 		this.StopAllCoroutines();
 		this.StartCoroutine(HandleFadeOut(fadeTime));
+        if (fadeTime > 0)
+        {
+            PlayScrollClosed?.Invoke();
+        }
 	}
 
 	private IEnumerator HandleFadeIn(float fadeTime)

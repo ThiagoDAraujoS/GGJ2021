@@ -14,7 +14,16 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip DoorOpenClip;
     public AudioClip DoorCloseClip;
+
     public static AudioManager Instance;
+
+    public AudioClip BossSpawnClip;
+    public AudioClip PickItemUpClip;
+    public AudioClip DropItemClip;
+    public AudioClip WinThemeClip;
+    public AudioClip ScrollOpenClip;
+    public AudioClip ScrollClosedClip;
+
 
     public AudioClip[] FootstepClips;
 
@@ -28,6 +37,36 @@ public class AudioManager : MonoBehaviour
     public void PlayDoorClosedClip()
     {
         PlaybackDevice.PlayOneShot(DoorCloseClip);
+    }
+
+    public void PlayBossSpawnClip()
+    {
+        PlaybackDevice.PlayOneShot(BossSpawnClip);
+    }
+
+    public void PlayItemPickUpClip()
+    {
+        PlaybackDevice.PlayOneShot(PickItemUpClip);
+    }
+
+    public void PlayItemDropClip()
+    {
+        PlaybackDevice.PlayOneShot(DropItemClip);
+    }
+
+    public void PlayWinThemeClip()
+    {
+        PlaybackDevice.PlayOneShot(WinThemeClip);
+    }
+
+    public void PlayScrollOpenClip()
+    {
+        PlaybackDevice.PlayOneShot(ScrollOpenClip);
+    }
+
+    public void PlayScrollClosedClip()
+    {
+        PlaybackDevice.PlayOneShot(ScrollClosedClip);
     }
 
     public void OnEnable()

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameplayStateManager : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class GameplayStateManager : MonoBehaviour
 
 	public TaskUIController TaskUIController;
 	public GameOverUIController GameOverUIController;
+
+    //events
+    public UnityEvent GameOverWin;
 
 	[HideInInspector]
 	public GameOverState Result { get; private set; } = GameOverState.Death;
@@ -29,5 +33,10 @@ public class GameplayStateManager : MonoBehaviour
 		// Show UI
 		this.TaskUIController.ShowUI();
 		this.GameOverUIController.ShowUI();
+
+        if (gameOverState == GameOverState.Success)
+        {
+            GameOverWin?.Invoke();
+        }
 	}
 }
