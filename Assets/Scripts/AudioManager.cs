@@ -72,7 +72,7 @@ public class AudioManager : MonoBehaviour
 	{
 		StopPlayingFootsteps();
 
-		StartCoroutine(TransitionMusicToEndGame());
+		//StartCoroutine(TransitionMusicToEndGame());
 	}
 
 }
