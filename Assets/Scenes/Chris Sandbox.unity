@@ -17356,24 +17356,24 @@ PrefabInstance:
     - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
         type: 3}
       propertyPath: GenerateRandom
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
         type: 3}
       propertyPath: DebugObjectives.Array.size
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
         type: 3}
       propertyPath: DebugObjectives.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 673cd29fd285c5f4cbcb2b1a554c7efe,
+      objectReference: {fileID: 11400000, guid: 06ec9617157302540876465ba412bee4,
         type: 2}
     - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
         type: 3}
       propertyPath: DebugObjectives.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 6c84f4ff04450b348b97302618a99c4a,
+      objectReference: {fileID: 11400000, guid: a86fb80ecea414f489a670d4ef8ac6da,
         type: 2}
     - target: {fileID: 5896227825688656332, guid: 7ace24ef26e949c4d8ff163b334958f9,
         type: 3}
